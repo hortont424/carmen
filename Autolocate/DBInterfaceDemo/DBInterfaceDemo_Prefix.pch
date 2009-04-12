@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'DB Mail Interface' target in the 'DB Mail Interface' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif

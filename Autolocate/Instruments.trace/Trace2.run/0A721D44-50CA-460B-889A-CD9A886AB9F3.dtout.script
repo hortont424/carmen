@@ -1,0 +1,78 @@
+
+#pragma D option switchrate=10msec
+#pragma D option bufsize=15m
+#pragma D option stackindent=0
+#pragma D option quiet
+#pragma D option stacksymbols=no
+int AppleProbeSwitch[int];
+syscall::getpriority:entry/execname=="Instruments"/ {AppleProbeSwitch[(int)arg0] = arg1;}
+
+BEGIN{
+AppleProbeSwitch[-1] = 1;
+
+AppleProbeSwitch[-2] = 1;
+}
+
+/*
+MARKER:0:PROBE
+*/
+
+/*
+MARKER:0:DESCRIPTOR:0
+*/
+pid61497::auto_trace_phase_begin:entry/(AppleProbeSwitch[-1] == 1) && (
+/*
+MARKER:1:PREDICATE
+*/
+(execname == "Autolocate")
+ && ( (arg2 == 3) && (arg1 == 0)))/{
+/*
+MARKER:0:SCRIPT:0
+*/
+self->starttime = walltimestamp/1000; 
+/*
+MARKER:0:EVENT:0
+*/
+}
+
+/*
+MARKER:0:DESCRIPTOR:1
+*/
+pid61497::auto_trace_phase_end:entry/(AppleProbeSwitch[-1] == 1) && (
+/*
+MARKER:1:PREDICATE
+*/
+(execname == "Autolocate")
+ && ( (arg2 == 3) && (arg1 == 0)))/{
+/*
+MARKER:0:SCRIPT:1
+*/
+/*
+MARKER:0:EVENT:1
+*/
+printf("<e> -1 0 %d %-14d\n%d\n%d\n%d\n%d\n%d \n</e>\n",tid, walltimestamp/1000, arg0, (int)arg3, arg1, (walltimestamp/1000) - self->starttime, (int)arg4);printf("<s>\n");ustack(128);printf("</s>\n");
+}
+
+/*
+MARKER:1:PROBE
+*/
+
+/*
+MARKER:1:DESCRIPTOR:0
+*/
+pid61497::auto_trace_collection_end:entry/(AppleProbeSwitch[-2] == 1) && (
+/*
+MARKER:2:PREDICATE
+*/
+(execname == "Autolocate")
+)/{
+/*
+MARKER:1:SCRIPT:0
+*/
+/*
+MARKER:1:EVENT:0
+*/
+printf("<e> -2 0 %d %-14d\n%d\n%d\n%d\n%d \n</e>\n",tid, walltimestamp/1000, (int)arg2, (int)arg3, (int)arg4, (int)arg5);printf("<s>\n");ustack(128);printf("</s>\n");
+}
+
+

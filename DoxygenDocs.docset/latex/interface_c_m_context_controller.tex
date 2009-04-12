@@ -1,0 +1,209 @@
+\hypertarget{interface_c_m_context_controller}{
+\section{CMContextController Class Reference}
+\label{interface_c_m_context_controller}\index{CMContextController@{CMContextController}}
+}
+Manages list of contexts, current context, and automatic context refresh.  
+
+
+{\tt \#import $<$CMContextController.h$>$}
+
+Inherits \hyperlink{class_n_s_object}{NSObject}.
+
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+(void) - \hyperlink{interface_c_m_context_controller_9ada89df5ea4d23429cf0df7ea058c22}{addContext:}
+\item 
+(void) - \hyperlink{interface_c_m_context_controller_f7513bfc5b0449fac6a28d39abfa4b79}{autoRefreshContext:}
+\item 
+(NSArray $\ast$) - \hyperlink{interface_c_m_context_controller_4d59f2e4274f438d12924d0545a4c048}{contexts}
+\item 
+(\hyperlink{interface_c_m_context}{CMContext} $\ast$) - \hyperlink{interface_c_m_context_controller_da04581b2bd50c7d6ddac62a42037b9d}{currentContext}
+\item 
+(int) - \hyperlink{interface_c_m_context_controller_63988f35d5d21aab75337e47e8fa7184}{determinePowerSource}
+\item 
+(bool) - \hyperlink{interface_c_m_context_controller_0aa1da85f94500590161d868d9a18b6f}{forcedContext}
+\item 
+(id) - \hyperlink{interface_c_m_context_controller_6ba2a92209cbd3485e5c13164fb19e58}{init}
+\item 
+(void) - \hyperlink{interface_c_m_context_controller_1f6874bf405e00bf511a19a53a64e137}{setCurrentContext:}
+\item 
+(void) - \hyperlink{interface_c_m_context_controller_43c3430ac3b4dfefbe07a4d94bfffb6e}{setForcedContext:}
+\item 
+(NSArray $\ast$) - \hyperlink{interface_c_m_context_controller_ec19920f50873a90d8f1f3a54c4bb9cd}{topLevelContexts}
+\item 
+(void) - \hyperlink{interface_c_m_context_controller_6ad2cdc6ec1494e5f89a24cf5472600f}{updateTimer}
+\end{CompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{CompactItemize}
+\item 
+(\hyperlink{interface_c_m_context_controller}{CMContextController} $\ast$) + \hyperlink{interface_c_m_context_controller_a2960652b2098e1029d6f64841fcf030}{sharedContextController}
+\end{CompactItemize}
+\subsection*{Protected Attributes}
+\begin{CompactItemize}
+\item 
+NSMutableArray $\ast$ \hyperlink{interface_c_m_context_controller_2563c65be09f418bb5ae7a6ce6389afe}{contexts}
+\begin{CompactList}\small\item\em An array of all available contexts. While this is a flat array, each context has a parent and children, allowing for heirarchy. \item\end{CompactList}\item 
+\hyperlink{interface_c_m_context}{CMContext} $\ast$ \hyperlink{interface_c_m_context_controller_8b34e13150d8651ccab4608b479808a0}{currentContext}
+\begin{CompactList}\small\item\em The currently active context, by autodetection or force. \item\end{CompactList}\item 
+bool \hyperlink{interface_c_m_context_controller_e518de0ebea35e4508147b44593b97e0}{forcedContext}
+\begin{CompactList}\small\item\em Determines whether or not the current context was forced by the user, or if we're in automatic mode. \item\end{CompactList}\item 
+NSTimer $\ast$ \hyperlink{interface_c_m_context_controller_ae5f83ba2bf74f94700ed577b2212f8a}{refreshTimer}
+\begin{CompactList}\small\item\em The timer used to automatically refresh the current context, if not forced. \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Manages list of contexts, current context, and automatic context refresh. 
+
+Manages the application-wide list of contexts, as well as the current context, and keeps the current context up-to date. This is where auto-detection takes place, as well as the home of the auto-detect timer. 
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_c_m_context_controller_9ada89df5ea4d23429cf0df7ea058c22}{
+\index{CMContextController@{CMContextController}!addContext:@{addContext:}}
+\index{addContext:@{addContext:}!CMContextController@{CMContextController}}
+\subsubsection[addContext:]{\setlength{\rightskip}{0pt plus 5cm}- (void) addContext: ({\bf CMContext} $\ast$) {\em inContext}}}
+\label{interface_c_m_context_controller_9ada89df5ea4d23429cf0df7ea058c22}
+
+
+\hypertarget{interface_c_m_context_controller_f7513bfc5b0449fac6a28d39abfa4b79}{
+\index{CMContextController@{CMContextController}!autoRefreshContext:@{autoRefreshContext:}}
+\index{autoRefreshContext:@{autoRefreshContext:}!CMContextController@{CMContextController}}
+\subsubsection[autoRefreshContext:]{\setlength{\rightskip}{0pt plus 5cm}- (void) autoRefreshContext: (NSTimer $\ast$) {\em timer}}}
+\label{interface_c_m_context_controller_f7513bfc5b0449fac6a28d39abfa4b79}
+
+
+Iterates through each of the contexts, evaluates its scheme fragment, and sets the current context to that with the greatest score.
+
+\begin{Desc}
+\item[\hyperlink{todo__todo000004}{Todo}]Eventually, we need to use the score in parent contexts to influence the scores of their children. This will have to be optional, because it might be unexpected. \end{Desc}
+\hypertarget{interface_c_m_context_controller_4d59f2e4274f438d12924d0545a4c048}{
+\index{CMContextController@{CMContextController}!contexts@{contexts}}
+\index{contexts@{contexts}!CMContextController@{CMContextController}}
+\subsubsection[contexts]{\setlength{\rightskip}{0pt plus 5cm}- (NSArray $\ast$) {\bf contexts} }}
+\label{interface_c_m_context_controller_4d59f2e4274f438d12924d0545a4c048}
+
+
+\hypertarget{interface_c_m_context_controller_da04581b2bd50c7d6ddac62a42037b9d}{
+\index{CMContextController@{CMContextController}!currentContext@{currentContext}}
+\index{currentContext@{currentContext}!CMContextController@{CMContextController}}
+\subsubsection[currentContext]{\setlength{\rightskip}{0pt plus 5cm}- ({\bf CMContext} $\ast$) {\bf currentContext} }}
+\label{interface_c_m_context_controller_da04581b2bd50c7d6ddac62a42037b9d}
+
+
+\hypertarget{interface_c_m_context_controller_63988f35d5d21aab75337e47e8fa7184}{
+\index{CMContextController@{CMContextController}!determinePowerSource@{determinePowerSource}}
+\index{determinePowerSource@{determinePowerSource}!CMContextController@{CMContextController}}
+\subsubsection[determinePowerSource]{\setlength{\rightskip}{0pt plus 5cm}- (int) determinePowerSource }}
+\label{interface_c_m_context_controller_63988f35d5d21aab75337e47e8fa7184}
+
+
+Determine whether we're on AC or battery power.
+
+\begin{Desc}
+\item[Returns:]POWER\_\-SOURCE\_\-BATTERY or POWER\_\-SOURCE\_\-AC \end{Desc}
+\hypertarget{interface_c_m_context_controller_0aa1da85f94500590161d868d9a18b6f}{
+\index{CMContextController@{CMContextController}!forcedContext@{forcedContext}}
+\index{forcedContext@{forcedContext}!CMContextController@{CMContextController}}
+\subsubsection[forcedContext]{\setlength{\rightskip}{0pt plus 5cm}- (bool) {\bf forcedContext} }}
+\label{interface_c_m_context_controller_0aa1da85f94500590161d868d9a18b6f}
+
+
+\hypertarget{interface_c_m_context_controller_6ba2a92209cbd3485e5c13164fb19e58}{
+\index{CMContextController@{CMContextController}!init@{init}}
+\index{init@{init}!CMContextController@{CMContextController}}
+\subsubsection[init]{\setlength{\rightskip}{0pt plus 5cm}- (id) init }}
+\label{interface_c_m_context_controller_6ba2a92209cbd3485e5c13164fb19e58}
+
+
+\hypertarget{interface_c_m_context_controller_1f6874bf405e00bf511a19a53a64e137}{
+\index{CMContextController@{CMContextController}!setCurrentContext:@{setCurrentContext:}}
+\index{setCurrentContext:@{setCurrentContext:}!CMContextController@{CMContextController}}
+\subsubsection[setCurrentContext:]{\setlength{\rightskip}{0pt plus 5cm}- (void) setCurrentContext: ({\bf CMContext} $\ast$) {\em inContext}}}
+\label{interface_c_m_context_controller_1f6874bf405e00bf511a19a53a64e137}
+
+
+\hypertarget{interface_c_m_context_controller_43c3430ac3b4dfefbe07a4d94bfffb6e}{
+\index{CMContextController@{CMContextController}!setForcedContext:@{setForcedContext:}}
+\index{setForcedContext:@{setForcedContext:}!CMContextController@{CMContextController}}
+\subsubsection[setForcedContext:]{\setlength{\rightskip}{0pt plus 5cm}- (void) setForcedContext: (bool) {\em inForce}}}
+\label{interface_c_m_context_controller_43c3430ac3b4dfefbe07a4d94bfffb6e}
+
+
+\hypertarget{interface_c_m_context_controller_a2960652b2098e1029d6f64841fcf030}{
+\index{CMContextController@{CMContextController}!sharedContextController@{sharedContextController}}
+\index{sharedContextController@{sharedContextController}!CMContextController@{CMContextController}}
+\subsubsection[sharedContextController]{\setlength{\rightskip}{0pt plus 5cm}+ ({\bf CMContextController} $\ast$) sharedContextController }}
+\label{interface_c_m_context_controller_a2960652b2098e1029d6f64841fcf030}
+
+
+\begin{Desc}
+\item[Returns:]A shared singleton context controller. \end{Desc}
+\hypertarget{interface_c_m_context_controller_ec19920f50873a90d8f1f3a54c4bb9cd}{
+\index{CMContextController@{CMContextController}!topLevelContexts@{topLevelContexts}}
+\index{topLevelContexts@{topLevelContexts}!CMContextController@{CMContextController}}
+\subsubsection[topLevelContexts]{\setlength{\rightskip}{0pt plus 5cm}- (NSArray $\ast$) topLevelContexts }}
+\label{interface_c_m_context_controller_ec19920f50873a90d8f1f3a54c4bb9cd}
+
+
+\begin{Desc}
+\item[Returns:]An NSArray of all of the CMContexts at the top level of the hierarchy. \end{Desc}
+\hypertarget{interface_c_m_context_controller_6ad2cdc6ec1494e5f89a24cf5472600f}{
+\index{CMContextController@{CMContextController}!updateTimer@{updateTimer}}
+\index{updateTimer@{updateTimer}!CMContextController@{CMContextController}}
+\subsubsection[updateTimer]{\setlength{\rightskip}{0pt plus 5cm}- (void) updateTimer }}
+\label{interface_c_m_context_controller_6ad2cdc6ec1494e5f89a24cf5472600f}
+
+
+If necessary, update the timer's interval based on our power source. Takes no action if the correct refresh frequency is already set; deletes the timer if we're set to not refresh.
+
+We need to make absolutely sure that we call this function whenever we go from no refresh to refreshing (either in the UI, or when the power state changes!); otherwise, since no polling is taking place, we'll never start the timer back up again.
+
+\begin{Desc}
+\item[\hyperlink{todo__todo000002}{Todo}]Right now, we have no way of knowing if power source changes if the timer's currently disabled... \end{Desc}
+\begin{Desc}
+\item[\hyperlink{todo__todo000002}{Todo}]When context is forced, we don't need to tick the timer; do, however, make sure that this gets called when we switch back! \end{Desc}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{interface_c_m_context_controller_2563c65be09f418bb5ae7a6ce6389afe}{
+\index{CMContextController@{CMContextController}!contexts@{contexts}}
+\index{contexts@{contexts}!CMContextController@{CMContextController}}
+\subsubsection[contexts]{\setlength{\rightskip}{0pt plus 5cm}- (NSArray $\ast$) {\bf contexts}\hspace{0.3cm}{\tt  \mbox{[}protected\mbox{]}}}}
+\label{interface_c_m_context_controller_2563c65be09f418bb5ae7a6ce6389afe}
+
+
+An array of all available contexts. While this is a flat array, each context has a parent and children, allowing for heirarchy. 
+
+\hypertarget{interface_c_m_context_controller_8b34e13150d8651ccab4608b479808a0}{
+\index{CMContextController@{CMContextController}!currentContext@{currentContext}}
+\index{currentContext@{currentContext}!CMContextController@{CMContextController}}
+\subsubsection[currentContext]{\setlength{\rightskip}{0pt plus 5cm}- ({\bf CMContext} $\ast$) {\bf currentContext}\hspace{0.3cm}{\tt  \mbox{[}protected\mbox{]}}}}
+\label{interface_c_m_context_controller_8b34e13150d8651ccab4608b479808a0}
+
+
+The currently active context, by autodetection or force. 
+
+\hypertarget{interface_c_m_context_controller_e518de0ebea35e4508147b44593b97e0}{
+\index{CMContextController@{CMContextController}!forcedContext@{forcedContext}}
+\index{forcedContext@{forcedContext}!CMContextController@{CMContextController}}
+\subsubsection[forcedContext]{\setlength{\rightskip}{0pt plus 5cm}- (bool) {\bf forcedContext}\hspace{0.3cm}{\tt  \mbox{[}protected\mbox{]}}}}
+\label{interface_c_m_context_controller_e518de0ebea35e4508147b44593b97e0}
+
+
+Determines whether or not the current context was forced by the user, or if we're in automatic mode. 
+
+\hypertarget{interface_c_m_context_controller_ae5f83ba2bf74f94700ed577b2212f8a}{
+\index{CMContextController@{CMContextController}!refreshTimer@{refreshTimer}}
+\index{refreshTimer@{refreshTimer}!CMContextController@{CMContextController}}
+\subsubsection[refreshTimer]{\setlength{\rightskip}{0pt plus 5cm}- (NSTimer$\ast$) {\bf refreshTimer}\hspace{0.3cm}{\tt  \mbox{[}protected\mbox{]}}}}
+\label{interface_c_m_context_controller_ae5f83ba2bf74f94700ed577b2212f8a}
+
+
+The timer used to automatically refresh the current context, if not forced. 
+
+
+
+The documentation for this class was generated from the following files:\begin{CompactItemize}
+\item 
+/Users/hortont/Code/Carmen/\hyperlink{_c_m_context_controller_8h}{CMContextController.h}\item 
+/Users/hortont/Code/Carmen/\hyperlink{_c_m_context_controller_8m}{CMContextController.m}\end{CompactItemize}

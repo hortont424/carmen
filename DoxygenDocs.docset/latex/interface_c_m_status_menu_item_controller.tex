@@ -1,0 +1,200 @@
+\hypertarget{interface_c_m_status_menu_item_controller}{
+\section{CMStatusMenuItemController Class Reference}
+\label{interface_c_m_status_menu_item_controller}\index{CMStatusMenuItemController@{CMStatusMenuItemController}}
+}
+{\tt \#import $<$CMStatusMenuItemController.h$>$}
+
+Inherits \hyperlink{class_n_s_object}{NSObject}.
+
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+(void) - \hyperlink{interface_c_m_status_menu_item_controller_0168c3814ce904a91051a2cf1119bb0b}{appendContext:toMenu:}
+\item 
+(void) - \hyperlink{interface_c_m_status_menu_item_controller_29d817892c511160f9bf827e70032a22}{awakeFromNib}
+\item 
+(void) - \hyperlink{interface_c_m_status_menu_item_controller_b0dee8ca25e6b8b64bb13ff501c869d4}{checkForUpdates:}{\tt  \mbox{[}implementation\mbox{]}}
+\item 
+(NSMenu $\ast$) - \hyperlink{interface_c_m_status_menu_item_controller_5bcc2dbf48b9d5a3af4f8193488d5f43}{createSetContextMenu}
+\item 
+(NSMenu $\ast$) - \hyperlink{interface_c_m_status_menu_item_controller_2f82c06d70babe8be094170f7819911c}{createStatusMenu}
+\item 
+(void) - \hyperlink{interface_c_m_status_menu_item_controller_47b8a5c1ec9a9626b2866572e6da8518}{forceContext:}{\tt  \mbox{[}implementation\mbox{]}}
+\item 
+(id) - \hyperlink{interface_c_m_status_menu_item_controller_ff3f38eb08f3760a4efa6dc9ea7c08a4}{init}
+\item 
+(void) - \hyperlink{interface_c_m_status_menu_item_controller_5adaccb51edcf55ea0c123ea3ccea3fd}{showAboutPanel:}{\tt  \mbox{[}implementation\mbox{]}}
+\item 
+(void) - \hyperlink{interface_c_m_status_menu_item_controller_68f7c2c7b01ebf45e0d01c72e0438147}{showContexts:}{\tt  \mbox{[}implementation\mbox{]}}
+\item 
+(void) - \hyperlink{interface_c_m_status_menu_item_controller_329307ae728069e7cfc670ca37896cac}{showPreferences:}{\tt  \mbox{[}implementation\mbox{]}}
+\item 
+(void) - \hyperlink{interface_c_m_status_menu_item_controller_2bfbf7ad1b53be39e06d227f5abdb8f8}{updateContextList:}
+\item 
+(void) - \hyperlink{interface_c_m_status_menu_item_controller_6f883df1dbf903772d2ea66d4c025c2f}{updateCurrentContext:}
+\end{CompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{CompactItemize}
+\item 
+(\hyperlink{interface_c_m_status_menu_item_controller}{CMStatusMenuItemController} $\ast$) + \hyperlink{interface_c_m_status_menu_item_controller_0b8aadc1a02f1f36173ddb623b648b77}{statusMenuItemController}
+\end{CompactItemize}
+\subsection*{Protected Attributes}
+\begin{CompactItemize}
+\item 
+NSMenuItem $\ast$ \hyperlink{interface_c_m_status_menu_item_controller_c40a96b86b1c5cd3ab7756179766302e}{currentContextItem}
+\item 
+NSMenu $\ast$ \hyperlink{interface_c_m_status_menu_item_controller_678496f6afb0fcdf34a33fb7e00d7dfb}{mainMenu}
+\item 
+IBOutlet NSWindow $\ast$ \hyperlink{interface_c_m_status_menu_item_controller_e5905fa0e384eda7fd573375ebcedb3e}{mainWindow}
+\item 
+NSMenuItem $\ast$ \hyperlink{interface_c_m_status_menu_item_controller_3e84ec9624ba71ad7413de39f739c364}{setContextMenuItem}
+\item 
+NSStatusItem $\ast$ \hyperlink{interface_c_m_status_menu_item_controller_543a31a619878459805d339524f83c32}{statusItem}
+\item 
+IBOutlet id \hyperlink{interface_c_m_status_menu_item_controller_e57a8c3f064507d53476ab69215dd97e}{updater}
+\end{CompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_c_m_status_menu_item_controller_0168c3814ce904a91051a2cf1119bb0b}{
+\index{CMStatusMenuItemController@{CMStatusMenuItemController}!appendContext:toMenu:@{appendContext:toMenu:}}
+\index{appendContext:toMenu:@{appendContext:toMenu:}!CMStatusMenuItemController@{CMStatusMenuItemController}}
+\subsubsection[appendContext:toMenu:]{\setlength{\rightskip}{0pt plus 5cm}- (void) appendContext: ({\bf CMContext} $\ast$) {\em context}\/ toMenu: (NSMenu $\ast$) {\em newMenu}}}
+\label{interface_c_m_status_menu_item_controller_0168c3814ce904a91051a2cf1119bb0b}
+
+
+\hypertarget{interface_c_m_status_menu_item_controller_29d817892c511160f9bf827e70032a22}{
+\index{CMStatusMenuItemController@{CMStatusMenuItemController}!awakeFromNib@{awakeFromNib}}
+\index{awakeFromNib@{awakeFromNib}!CMStatusMenuItemController@{CMStatusMenuItemController}}
+\subsubsection[awakeFromNib]{\setlength{\rightskip}{0pt plus 5cm}- (void) awakeFromNib }}
+\label{interface_c_m_status_menu_item_controller_29d817892c511160f9bf827e70032a22}
+
+
+\hypertarget{interface_c_m_status_menu_item_controller_b0dee8ca25e6b8b64bb13ff501c869d4}{
+\index{CMStatusMenuItemController@{CMStatusMenuItemController}!checkForUpdates:@{checkForUpdates:}}
+\index{checkForUpdates:@{checkForUpdates:}!CMStatusMenuItemController@{CMStatusMenuItemController}}
+\subsubsection[checkForUpdates:]{\setlength{\rightskip}{0pt plus 5cm}- (void) checkForUpdates: (id) {\em sender}\hspace{0.3cm}{\tt  \mbox{[}implementation\mbox{]}}}}
+\label{interface_c_m_status_menu_item_controller_b0dee8ca25e6b8b64bb13ff501c869d4}
+
+
+\hypertarget{interface_c_m_status_menu_item_controller_5bcc2dbf48b9d5a3af4f8193488d5f43}{
+\index{CMStatusMenuItemController@{CMStatusMenuItemController}!createSetContextMenu@{createSetContextMenu}}
+\index{createSetContextMenu@{createSetContextMenu}!CMStatusMenuItemController@{CMStatusMenuItemController}}
+\subsubsection[createSetContextMenu]{\setlength{\rightskip}{0pt plus 5cm}- (NSMenu $\ast$) createSetContextMenu }}
+\label{interface_c_m_status_menu_item_controller_5bcc2dbf48b9d5a3af4f8193488d5f43}
+
+
+\hypertarget{interface_c_m_status_menu_item_controller_2f82c06d70babe8be094170f7819911c}{
+\index{CMStatusMenuItemController@{CMStatusMenuItemController}!createStatusMenu@{createStatusMenu}}
+\index{createStatusMenu@{createStatusMenu}!CMStatusMenuItemController@{CMStatusMenuItemController}}
+\subsubsection[createStatusMenu]{\setlength{\rightskip}{0pt plus 5cm}- (NSMenu $\ast$) createStatusMenu }}
+\label{interface_c_m_status_menu_item_controller_2f82c06d70babe8be094170f7819911c}
+
+
+\hypertarget{interface_c_m_status_menu_item_controller_47b8a5c1ec9a9626b2866572e6da8518}{
+\index{CMStatusMenuItemController@{CMStatusMenuItemController}!forceContext:@{forceContext:}}
+\index{forceContext:@{forceContext:}!CMStatusMenuItemController@{CMStatusMenuItemController}}
+\subsubsection[forceContext:]{\setlength{\rightskip}{0pt plus 5cm}- (void) forceContext: (id) {\em sender}\hspace{0.3cm}{\tt  \mbox{[}implementation\mbox{]}}}}
+\label{interface_c_m_status_menu_item_controller_47b8a5c1ec9a9626b2866572e6da8518}
+
+
+\hypertarget{interface_c_m_status_menu_item_controller_ff3f38eb08f3760a4efa6dc9ea7c08a4}{
+\index{CMStatusMenuItemController@{CMStatusMenuItemController}!init@{init}}
+\index{init@{init}!CMStatusMenuItemController@{CMStatusMenuItemController}}
+\subsubsection[init]{\setlength{\rightskip}{0pt plus 5cm}- (id) init }}
+\label{interface_c_m_status_menu_item_controller_ff3f38eb08f3760a4efa6dc9ea7c08a4}
+
+
+\hypertarget{interface_c_m_status_menu_item_controller_5adaccb51edcf55ea0c123ea3ccea3fd}{
+\index{CMStatusMenuItemController@{CMStatusMenuItemController}!showAboutPanel:@{showAboutPanel:}}
+\index{showAboutPanel:@{showAboutPanel:}!CMStatusMenuItemController@{CMStatusMenuItemController}}
+\subsubsection[showAboutPanel:]{\setlength{\rightskip}{0pt plus 5cm}- (void) showAboutPanel: (id) {\em sender}\hspace{0.3cm}{\tt  \mbox{[}implementation\mbox{]}}}}
+\label{interface_c_m_status_menu_item_controller_5adaccb51edcf55ea0c123ea3ccea3fd}
+
+
+\hypertarget{interface_c_m_status_menu_item_controller_68f7c2c7b01ebf45e0d01c72e0438147}{
+\index{CMStatusMenuItemController@{CMStatusMenuItemController}!showContexts:@{showContexts:}}
+\index{showContexts:@{showContexts:}!CMStatusMenuItemController@{CMStatusMenuItemController}}
+\subsubsection[showContexts:]{\setlength{\rightskip}{0pt plus 5cm}- (void) showContexts: (id) {\em sender}\hspace{0.3cm}{\tt  \mbox{[}implementation\mbox{]}}}}
+\label{interface_c_m_status_menu_item_controller_68f7c2c7b01ebf45e0d01c72e0438147}
+
+
+\hypertarget{interface_c_m_status_menu_item_controller_329307ae728069e7cfc670ca37896cac}{
+\index{CMStatusMenuItemController@{CMStatusMenuItemController}!showPreferences:@{showPreferences:}}
+\index{showPreferences:@{showPreferences:}!CMStatusMenuItemController@{CMStatusMenuItemController}}
+\subsubsection[showPreferences:]{\setlength{\rightskip}{0pt plus 5cm}- (void) showPreferences: (id) {\em sender}\hspace{0.3cm}{\tt  \mbox{[}implementation\mbox{]}}}}
+\label{interface_c_m_status_menu_item_controller_329307ae728069e7cfc670ca37896cac}
+
+
+\hypertarget{interface_c_m_status_menu_item_controller_0b8aadc1a02f1f36173ddb623b648b77}{
+\index{CMStatusMenuItemController@{CMStatusMenuItemController}!statusMenuItemController@{statusMenuItemController}}
+\index{statusMenuItemController@{statusMenuItemController}!CMStatusMenuItemController@{CMStatusMenuItemController}}
+\subsubsection[statusMenuItemController]{\setlength{\rightskip}{0pt plus 5cm}+ ({\bf CMStatusMenuItemController} $\ast$) statusMenuItemController }}
+\label{interface_c_m_status_menu_item_controller_0b8aadc1a02f1f36173ddb623b648b77}
+
+
+\hypertarget{interface_c_m_status_menu_item_controller_2bfbf7ad1b53be39e06d227f5abdb8f8}{
+\index{CMStatusMenuItemController@{CMStatusMenuItemController}!updateContextList:@{updateContextList:}}
+\index{updateContextList:@{updateContextList:}!CMStatusMenuItemController@{CMStatusMenuItemController}}
+\subsubsection[updateContextList:]{\setlength{\rightskip}{0pt plus 5cm}- (void) updateContextList: (NSNotification $\ast$) {\em notification}}}
+\label{interface_c_m_status_menu_item_controller_2bfbf7ad1b53be39e06d227f5abdb8f8}
+
+
+\hypertarget{interface_c_m_status_menu_item_controller_6f883df1dbf903772d2ea66d4c025c2f}{
+\index{CMStatusMenuItemController@{CMStatusMenuItemController}!updateCurrentContext:@{updateCurrentContext:}}
+\index{updateCurrentContext:@{updateCurrentContext:}!CMStatusMenuItemController@{CMStatusMenuItemController}}
+\subsubsection[updateCurrentContext:]{\setlength{\rightskip}{0pt plus 5cm}- (void) updateCurrentContext: (NSNotification $\ast$) {\em notification}}}
+\label{interface_c_m_status_menu_item_controller_6f883df1dbf903772d2ea66d4c025c2f}
+
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{interface_c_m_status_menu_item_controller_c40a96b86b1c5cd3ab7756179766302e}{
+\index{CMStatusMenuItemController@{CMStatusMenuItemController}!currentContextItem@{currentContextItem}}
+\index{currentContextItem@{currentContextItem}!CMStatusMenuItemController@{CMStatusMenuItemController}}
+\subsubsection[currentContextItem]{\setlength{\rightskip}{0pt plus 5cm}- (NSMenuItem$\ast$) {\bf currentContextItem}\hspace{0.3cm}{\tt  \mbox{[}protected\mbox{]}}}}
+\label{interface_c_m_status_menu_item_controller_c40a96b86b1c5cd3ab7756179766302e}
+
+
+\hypertarget{interface_c_m_status_menu_item_controller_678496f6afb0fcdf34a33fb7e00d7dfb}{
+\index{CMStatusMenuItemController@{CMStatusMenuItemController}!mainMenu@{mainMenu}}
+\index{mainMenu@{mainMenu}!CMStatusMenuItemController@{CMStatusMenuItemController}}
+\subsubsection[mainMenu]{\setlength{\rightskip}{0pt plus 5cm}- (NSMenu$\ast$) {\bf mainMenu}\hspace{0.3cm}{\tt  \mbox{[}protected\mbox{]}}}}
+\label{interface_c_m_status_menu_item_controller_678496f6afb0fcdf34a33fb7e00d7dfb}
+
+
+\hypertarget{interface_c_m_status_menu_item_controller_e5905fa0e384eda7fd573375ebcedb3e}{
+\index{CMStatusMenuItemController@{CMStatusMenuItemController}!mainWindow@{mainWindow}}
+\index{mainWindow@{mainWindow}!CMStatusMenuItemController@{CMStatusMenuItemController}}
+\subsubsection[mainWindow]{\setlength{\rightskip}{0pt plus 5cm}- (IBOutlet NSWindow$\ast$) {\bf mainWindow}\hspace{0.3cm}{\tt  \mbox{[}protected\mbox{]}}}}
+\label{interface_c_m_status_menu_item_controller_e5905fa0e384eda7fd573375ebcedb3e}
+
+
+\hypertarget{interface_c_m_status_menu_item_controller_3e84ec9624ba71ad7413de39f739c364}{
+\index{CMStatusMenuItemController@{CMStatusMenuItemController}!setContextMenuItem@{setContextMenuItem}}
+\index{setContextMenuItem@{setContextMenuItem}!CMStatusMenuItemController@{CMStatusMenuItemController}}
+\subsubsection[setContextMenuItem]{\setlength{\rightskip}{0pt plus 5cm}- (NSMenuItem$\ast$) {\bf setContextMenuItem}\hspace{0.3cm}{\tt  \mbox{[}protected\mbox{]}}}}
+\label{interface_c_m_status_menu_item_controller_3e84ec9624ba71ad7413de39f739c364}
+
+
+\hypertarget{interface_c_m_status_menu_item_controller_543a31a619878459805d339524f83c32}{
+\index{CMStatusMenuItemController@{CMStatusMenuItemController}!statusItem@{statusItem}}
+\index{statusItem@{statusItem}!CMStatusMenuItemController@{CMStatusMenuItemController}}
+\subsubsection[statusItem]{\setlength{\rightskip}{0pt plus 5cm}- (NSStatusItem$\ast$) {\bf statusItem}\hspace{0.3cm}{\tt  \mbox{[}protected\mbox{]}}}}
+\label{interface_c_m_status_menu_item_controller_543a31a619878459805d339524f83c32}
+
+
+\hypertarget{interface_c_m_status_menu_item_controller_e57a8c3f064507d53476ab69215dd97e}{
+\index{CMStatusMenuItemController@{CMStatusMenuItemController}!updater@{updater}}
+\index{updater@{updater}!CMStatusMenuItemController@{CMStatusMenuItemController}}
+\subsubsection[updater]{\setlength{\rightskip}{0pt plus 5cm}- (IBOutlet id) {\bf updater}\hspace{0.3cm}{\tt  \mbox{[}protected\mbox{]}}}}
+\label{interface_c_m_status_menu_item_controller_e57a8c3f064507d53476ab69215dd97e}
+
+
+
+
+The documentation for this class was generated from the following files:\begin{CompactItemize}
+\item 
+/Users/hortont/Code/Carmen/\hyperlink{_c_m_status_menu_item_controller_8h}{CMStatusMenuItemController.h}\item 
+/Users/hortont/Code/Carmen/\hyperlink{_c_m_status_menu_item_controller_8m}{CMStatusMenuItemController.m}\end{CompactItemize}

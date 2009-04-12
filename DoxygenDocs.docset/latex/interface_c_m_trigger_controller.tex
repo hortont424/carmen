@@ -1,0 +1,128 @@
+\hypertarget{interface_c_m_trigger_controller}{
+\section{CMTriggerController Class Reference}
+\label{interface_c_m_trigger_controller}\index{CMTriggerController@{CMTriggerController}}
+}
+{\tt \#import $<$CMTriggerController.h$>$}
+
+Inherits \hyperlink{class_n_s_object}{NSObject}.
+
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+(id) - \hyperlink{interface_c_m_trigger_controller_9e301be537e86bba778a0652bf38134d}{bundleForPlugin:}
+\item 
+(SCM) - \hyperlink{interface_c_m_trigger_controller_d87aa3e94baf65a3ca6f685f91a22929}{calculate\_\-context}{\tt  \mbox{[}implementation\mbox{]}}
+\item 
+(id) - \hyperlink{interface_c_m_trigger_controller_c6f39b489d64555699fa9c38e0516581}{init}{\tt  \mbox{[}implementation\mbox{]}}
+\item 
+(void) - \hyperlink{interface_c_m_trigger_controller_5eccedcfd0088a32f7cee0669ca9b772}{loadPlugins}{\tt  \mbox{[}implementation\mbox{]}}
+\item 
+(void) - \hyperlink{interface_c_m_trigger_controller_d4d5679bbd0b8a5b0a269b7f7f83ed79}{loadTriggerPlugin:}
+\item 
+(NSDictionary $\ast$) - \hyperlink{interface_c_m_trigger_controller_59d0e0659afe972e2e76fed5f2d4898b}{schemeNames}
+\item 
+(NSDictionary $\ast$) - \hyperlink{interface_c_m_trigger_controller_20dfaa03a6d6e2bb16c8774b1438127a}{triggerNames}
+\end{CompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{CompactItemize}
+\item 
+(\hyperlink{interface_c_m_trigger_controller}{CMTriggerController} $\ast$) + \hyperlink{interface_c_m_trigger_controller_a298bd150975d7ff5301a04bec3017ec}{sharedTriggerController}
+\end{CompactItemize}
+\subsection*{Protected Attributes}
+\begin{CompactItemize}
+\item 
+NSMutableDictionary $\ast$ \hyperlink{interface_c_m_trigger_controller_5f63a268b74e47fcdfde3ea1154a9694}{bundles}
+\item 
+NSMutableDictionary $\ast$ \hyperlink{interface_c_m_trigger_controller_3495c16ffa6b74cbc757085af6370051}{schemeNames}
+\item 
+NSMutableDictionary $\ast$ \hyperlink{interface_c_m_trigger_controller_0d952c6951663ffd7157ec4644219fad}{triggerNames}
+\end{CompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_c_m_trigger_controller_9e301be537e86bba778a0652bf38134d}{
+\index{CMTriggerController@{CMTriggerController}!bundleForPlugin:@{bundleForPlugin:}}
+\index{bundleForPlugin:@{bundleForPlugin:}!CMTriggerController@{CMTriggerController}}
+\subsubsection[bundleForPlugin:]{\setlength{\rightskip}{0pt plus 5cm}- (id) bundleForPlugin: ({\bf NSString} $\ast$) {\em name}}}
+\label{interface_c_m_trigger_controller_9e301be537e86bba778a0652bf38134d}
+
+
+\hypertarget{interface_c_m_trigger_controller_d87aa3e94baf65a3ca6f685f91a22929}{
+\index{CMTriggerController@{CMTriggerController}!calculate\_\-context@{calculate\_\-context}}
+\index{calculate\_\-context@{calculate\_\-context}!CMTriggerController@{CMTriggerController}}
+\subsubsection[calculate\_\-context]{\setlength{\rightskip}{0pt plus 5cm}- (SCM) calculate\_\-context (SCM) {\em c}\hspace{0.3cm}{\tt  \mbox{[}implementation\mbox{]}}}}
+\label{interface_c_m_trigger_controller_d87aa3e94baf65a3ca6f685f91a22929}
+
+
+\hypertarget{interface_c_m_trigger_controller_c6f39b489d64555699fa9c38e0516581}{
+\index{CMTriggerController@{CMTriggerController}!init@{init}}
+\index{init@{init}!CMTriggerController@{CMTriggerController}}
+\subsubsection[init]{\setlength{\rightskip}{0pt plus 5cm}- (id) init \hspace{0.3cm}{\tt  \mbox{[}implementation\mbox{]}}}}
+\label{interface_c_m_trigger_controller_c6f39b489d64555699fa9c38e0516581}
+
+
+\hypertarget{interface_c_m_trigger_controller_5eccedcfd0088a32f7cee0669ca9b772}{
+\index{CMTriggerController@{CMTriggerController}!loadPlugins@{loadPlugins}}
+\index{loadPlugins@{loadPlugins}!CMTriggerController@{CMTriggerController}}
+\subsubsection[loadPlugins]{\setlength{\rightskip}{0pt plus 5cm}- (void) loadPlugins \hspace{0.3cm}{\tt  \mbox{[}implementation\mbox{]}}}}
+\label{interface_c_m_trigger_controller_5eccedcfd0088a32f7cee0669ca9b772}
+
+
+\hypertarget{interface_c_m_trigger_controller_d4d5679bbd0b8a5b0a269b7f7f83ed79}{
+\index{CMTriggerController@{CMTriggerController}!loadTriggerPlugin:@{loadTriggerPlugin:}}
+\index{loadTriggerPlugin:@{loadTriggerPlugin:}!CMTriggerController@{CMTriggerController}}
+\subsubsection[loadTriggerPlugin:]{\setlength{\rightskip}{0pt plus 5cm}- (void) loadTriggerPlugin: ({\bf NSString} $\ast$) {\em path}}}
+\label{interface_c_m_trigger_controller_d4d5679bbd0b8a5b0a269b7f7f83ed79}
+
+
+Loads a trigger plugin bundle. \hypertarget{interface_c_m_trigger_controller_59d0e0659afe972e2e76fed5f2d4898b}{
+\index{CMTriggerController@{CMTriggerController}!schemeNames@{schemeNames}}
+\index{schemeNames@{schemeNames}!CMTriggerController@{CMTriggerController}}
+\subsubsection[schemeNames]{\setlength{\rightskip}{0pt plus 5cm}- (NSDictionary $\ast$) {\bf schemeNames} }}
+\label{interface_c_m_trigger_controller_59d0e0659afe972e2e76fed5f2d4898b}
+
+
+\hypertarget{interface_c_m_trigger_controller_a298bd150975d7ff5301a04bec3017ec}{
+\index{CMTriggerController@{CMTriggerController}!sharedTriggerController@{sharedTriggerController}}
+\index{sharedTriggerController@{sharedTriggerController}!CMTriggerController@{CMTriggerController}}
+\subsubsection[sharedTriggerController]{\setlength{\rightskip}{0pt plus 5cm}+ ({\bf CMTriggerController} $\ast$) sharedTriggerController }}
+\label{interface_c_m_trigger_controller_a298bd150975d7ff5301a04bec3017ec}
+
+
+\hypertarget{interface_c_m_trigger_controller_20dfaa03a6d6e2bb16c8774b1438127a}{
+\index{CMTriggerController@{CMTriggerController}!triggerNames@{triggerNames}}
+\index{triggerNames@{triggerNames}!CMTriggerController@{CMTriggerController}}
+\subsubsection[triggerNames]{\setlength{\rightskip}{0pt plus 5cm}- (NSDictionary $\ast$) {\bf triggerNames} }}
+\label{interface_c_m_trigger_controller_20dfaa03a6d6e2bb16c8774b1438127a}
+
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{interface_c_m_trigger_controller_5f63a268b74e47fcdfde3ea1154a9694}{
+\index{CMTriggerController@{CMTriggerController}!bundles@{bundles}}
+\index{bundles@{bundles}!CMTriggerController@{CMTriggerController}}
+\subsubsection[bundles]{\setlength{\rightskip}{0pt plus 5cm}- (NSMutableDictionary$\ast$) {\bf bundles}\hspace{0.3cm}{\tt  \mbox{[}protected\mbox{]}}}}
+\label{interface_c_m_trigger_controller_5f63a268b74e47fcdfde3ea1154a9694}
+
+
+\hypertarget{interface_c_m_trigger_controller_3495c16ffa6b74cbc757085af6370051}{
+\index{CMTriggerController@{CMTriggerController}!schemeNames@{schemeNames}}
+\index{schemeNames@{schemeNames}!CMTriggerController@{CMTriggerController}}
+\subsubsection[schemeNames]{\setlength{\rightskip}{0pt plus 5cm}- (NSDictionary $\ast$) {\bf schemeNames}\hspace{0.3cm}{\tt  \mbox{[}protected\mbox{]}}}}
+\label{interface_c_m_trigger_controller_3495c16ffa6b74cbc757085af6370051}
+
+
+\hypertarget{interface_c_m_trigger_controller_0d952c6951663ffd7157ec4644219fad}{
+\index{CMTriggerController@{CMTriggerController}!triggerNames@{triggerNames}}
+\index{triggerNames@{triggerNames}!CMTriggerController@{CMTriggerController}}
+\subsubsection[triggerNames]{\setlength{\rightskip}{0pt plus 5cm}- (NSDictionary $\ast$) {\bf triggerNames}\hspace{0.3cm}{\tt  \mbox{[}protected\mbox{]}}}}
+\label{interface_c_m_trigger_controller_0d952c6951663ffd7157ec4644219fad}
+
+
+
+
+The documentation for this class was generated from the following files:\begin{CompactItemize}
+\item 
+/Users/hortont/Code/Carmen/\hyperlink{_c_m_trigger_controller_8h}{CMTriggerController.h}\item 
+/Users/hortont/Code/Carmen/\hyperlink{_c_m_trigger_controller_8m}{CMTriggerController.m}\end{CompactItemize}

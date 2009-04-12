@@ -1,0 +1,2 @@
+/Users/hortont/Code/Carmen/CMLightTrigger/CMLightTrigger.m: In function 'CMLightTrigger_':
+/Users/hortont/Code/Carmen/CMLightTrigger/CMLightTrigger.m:24: warning: 'IOConnectMethodScalarIScalarO' is deprecated (declared at /Developer/SDKs/MacOSX10.5.sdk/System/Library/Frameworks/IOKit.framework/Headers/IOKitLib.h:1289)

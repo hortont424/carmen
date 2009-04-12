@@ -1,0 +1,242 @@
+\hypertarget{interface_c_m_window_controller}{
+\section{CMWindowController Class Reference}
+\label{interface_c_m_window_controller}\index{CMWindowController@{CMWindowController}}
+}
+{\tt \#import $<$CMWindowController.h$>$}
+
+Inherits \hyperlink{class_n_s_window_controller}{NSWindowController}.
+
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+(void) - \hyperlink{interface_c_m_window_controller_90bc0db5d52824b64f3840ceabf8fc23}{awakeFromNib}{\tt  \mbox{[}implementation\mbox{]}}
+\item 
+(NSMutableDictionary $\ast$) - \hyperlink{interface_c_m_window_controller_270296afa392485f936b630d5e7e0633}{groupById:}{\tt  \mbox{[}implementation\mbox{]}}
+\item 
+(void) - \hyperlink{interface_c_m_window_controller_eb91277909122f15a5443b497ba0c29b}{resizeWindowToSize:withMinSize:limitMaxSize:}
+\item 
+(void) - \hyperlink{interface_c_m_window_controller_e14b0f7e31f166967f3f29a048689043}{switchToView:}
+\item 
+(void) - \hyperlink{interface_c_m_window_controller_ddf4b3a6a3679a5058026e32515c0cf1}{switchToViewFromToolbar:}
+\item 
+(float) - \hyperlink{interface_c_m_window_controller_ea152121637d5169165a54e790f5bdcd}{titleBarHeight}
+\item 
+(NSToolbarItem $\ast$) - \hyperlink{interface_c_m_window_controller_613c7f61a1b4830b616df8a23d8f12b9}{toolbar:itemForItemIdentifier:willBeInsertedIntoToolbar:}
+\item 
+(NSArray $\ast$) - \hyperlink{interface_c_m_window_controller_83412ac27a3c281c599e9d00ed8d1971}{toolbarAllowedItemIdentifiers:}
+\item 
+(NSArray $\ast$) - \hyperlink{interface_c_m_window_controller_a279ef0d596af18bf3cc33be365cc77c}{toolbarDefaultItemIdentifiers:}
+\item 
+(float) - \hyperlink{interface_c_m_window_controller_eac4c2bb1286f184886ac4ad40af899a}{toolbarHeight}
+\item 
+(NSArray $\ast$) - \hyperlink{interface_c_m_window_controller_09a848e0edfe89c56c873f0ccec55ec8}{toolbarSelectableItemIdentifiers:}
+\end{CompactItemize}
+\subsection*{Protected Attributes}
+\begin{CompactItemize}
+\item 
+IBOutlet \hyperlink{class_n_s_view}{NSView} $\ast$ \hyperlink{interface_c_m_window_controller_a673b337109398fa2b8e138fe9f08224}{advancedView}
+\item 
+IBOutlet \hyperlink{class_n_s_view}{NSView} $\ast$ \hyperlink{interface_c_m_window_controller_2e4a8415c4a28ff7638696cb4b650161}{contextsView}
+\item 
+\hyperlink{class_n_s_string}{NSString} $\ast$ \hyperlink{interface_c_m_window_controller_dc91051bebb3076d4484530e736622ca}{currentPrefsGroup}
+\item 
+\hyperlink{class_n_s_view}{NSView} $\ast$ \hyperlink{interface_c_m_window_controller_7e4bdab922f64da0ae1c66ff5a8f538a}{currentPrefsView}
+\item 
+IBOutlet \hyperlink{class_n_s_view}{NSView} $\ast$ \hyperlink{interface_c_m_window_controller_0208b15d4c7cc22d9b04f66eef0173ed}{generalView}
+\item 
+IBOutlet id \hyperlink{interface_c_m_window_controller_110a03075bf89edcf25208d579cc0374}{listSplitter}
+\item 
+IBOutlet id \hyperlink{interface_c_m_window_controller_8924cca99f80e7b215068a23d375edce}{listSplitterPlaceholder}
+\item 
+NSArray $\ast$ \hyperlink{interface_c_m_window_controller_d5dd5cafd76b4d008e0ddbc92b928e1b}{prefsGroups}
+\item 
+NSToolbar $\ast$ \hyperlink{interface_c_m_window_controller_5e33dd8ae9308216fe56beab45097ec7}{prefsToolbar}
+\item 
+IBOutlet id \hyperlink{interface_c_m_window_controller_dd05105cac35dbf0b02c10086e183fdd}{rulesView}
+\item 
+IBOutlet id \hyperlink{interface_c_m_window_controller_e1c749543503661c7956761c6f10b95f}{sourceSplitter}
+\item 
+IBOutlet id \hyperlink{interface_c_m_window_controller_7c3e1c39774afa7401869ed51460e7c3}{sourceSplitterPlaceholder}
+\item 
+IBOutlet DBSourceView $\ast$ \hyperlink{interface_c_m_window_controller_0534aae4f0512cb2da96464157f04b75}{sourceView}
+\end{CompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_c_m_window_controller_90bc0db5d52824b64f3840ceabf8fc23}{
+\index{CMWindowController@{CMWindowController}!awakeFromNib@{awakeFromNib}}
+\index{awakeFromNib@{awakeFromNib}!CMWindowController@{CMWindowController}}
+\subsubsection[awakeFromNib]{\setlength{\rightskip}{0pt plus 5cm}- (void) awakeFromNib \hspace{0.3cm}{\tt  \mbox{[}implementation\mbox{]}}}}
+\label{interface_c_m_window_controller_90bc0db5d52824b64f3840ceabf8fc23}
+
+
+\hypertarget{interface_c_m_window_controller_270296afa392485f936b630d5e7e0633}{
+\index{CMWindowController@{CMWindowController}!groupById:@{groupById:}}
+\index{groupById:@{groupById:}!CMWindowController@{CMWindowController}}
+\subsubsection[groupById:]{\setlength{\rightskip}{0pt plus 5cm}- (NSMutableDictionary $\ast$) groupById: ({\bf NSString} $\ast$) {\em groupId}\hspace{0.3cm}{\tt  \mbox{[}implementation\mbox{]}}}}
+\label{interface_c_m_window_controller_270296afa392485f936b630d5e7e0633}
+
+
+\hypertarget{interface_c_m_window_controller_eb91277909122f15a5443b497ba0c29b}{
+\index{CMWindowController@{CMWindowController}!resizeWindowToSize:withMinSize:limitMaxSize:@{resizeWindowToSize:withMinSize:limitMaxSize:}}
+\index{resizeWindowToSize:withMinSize:limitMaxSize:@{resizeWindowToSize:withMinSize:limitMaxSize:}!CMWindowController@{CMWindowController}}
+\subsubsection[resizeWindowToSize:withMinSize:limitMaxSize:]{\setlength{\rightskip}{0pt plus 5cm}- (void) resizeWindowToSize: (NSSize) {\em size}\/ withMinSize: (NSSize) {\em minSize}\/ limitMaxSize: (BOOL) {\em limitMaxSize}}}
+\label{interface_c_m_window_controller_eb91277909122f15a5443b497ba0c29b}
+
+
+\hypertarget{interface_c_m_window_controller_e14b0f7e31f166967f3f29a048689043}{
+\index{CMWindowController@{CMWindowController}!switchToView:@{switchToView:}}
+\index{switchToView:@{switchToView:}!CMWindowController@{CMWindowController}}
+\subsubsection[switchToView:]{\setlength{\rightskip}{0pt plus 5cm}- (void) switchToView: ({\bf NSString} $\ast$) {\em identifier}}}
+\label{interface_c_m_window_controller_e14b0f7e31f166967f3f29a048689043}
+
+
+\hypertarget{interface_c_m_window_controller_ddf4b3a6a3679a5058026e32515c0cf1}{
+\index{CMWindowController@{CMWindowController}!switchToViewFromToolbar:@{switchToViewFromToolbar:}}
+\index{switchToViewFromToolbar:@{switchToViewFromToolbar:}!CMWindowController@{CMWindowController}}
+\subsubsection[switchToViewFromToolbar:]{\setlength{\rightskip}{0pt plus 5cm}- (void) switchToViewFromToolbar: (NSToolbarItem $\ast$) {\em item}}}
+\label{interface_c_m_window_controller_ddf4b3a6a3679a5058026e32515c0cf1}
+
+
+\hypertarget{interface_c_m_window_controller_ea152121637d5169165a54e790f5bdcd}{
+\index{CMWindowController@{CMWindowController}!titleBarHeight@{titleBarHeight}}
+\index{titleBarHeight@{titleBarHeight}!CMWindowController@{CMWindowController}}
+\subsubsection[titleBarHeight]{\setlength{\rightskip}{0pt plus 5cm}- (float) titleBarHeight }}
+\label{interface_c_m_window_controller_ea152121637d5169165a54e790f5bdcd}
+
+
+\hypertarget{interface_c_m_window_controller_613c7f61a1b4830b616df8a23d8f12b9}{
+\index{CMWindowController@{CMWindowController}!toolbar:itemForItemIdentifier:willBeInsertedIntoToolbar:@{toolbar:itemForItemIdentifier:willBeInsertedIntoToolbar:}}
+\index{toolbar:itemForItemIdentifier:willBeInsertedIntoToolbar:@{toolbar:itemForItemIdentifier:willBeInsertedIntoToolbar:}!CMWindowController@{CMWindowController}}
+\subsubsection[toolbar:itemForItemIdentifier:willBeInsertedIntoToolbar:]{\setlength{\rightskip}{0pt plus 5cm}- (NSToolbarItem $\ast$) toolbar: (NSToolbar $\ast$) {\em toolbar}\/ itemForItemIdentifier: ({\bf NSString} $\ast$) {\em groupId}\/ willBeInsertedIntoToolbar: (BOOL) {\em flag}}}
+\label{interface_c_m_window_controller_613c7f61a1b4830b616df8a23d8f12b9}
+
+
+\hypertarget{interface_c_m_window_controller_83412ac27a3c281c599e9d00ed8d1971}{
+\index{CMWindowController@{CMWindowController}!toolbarAllowedItemIdentifiers:@{toolbarAllowedItemIdentifiers:}}
+\index{toolbarAllowedItemIdentifiers:@{toolbarAllowedItemIdentifiers:}!CMWindowController@{CMWindowController}}
+\subsubsection[toolbarAllowedItemIdentifiers:]{\setlength{\rightskip}{0pt plus 5cm}- (NSArray $\ast$) toolbarAllowedItemIdentifiers: (NSToolbar $\ast$) {\em toolbar}}}
+\label{interface_c_m_window_controller_83412ac27a3c281c599e9d00ed8d1971}
+
+
+\hypertarget{interface_c_m_window_controller_a279ef0d596af18bf3cc33be365cc77c}{
+\index{CMWindowController@{CMWindowController}!toolbarDefaultItemIdentifiers:@{toolbarDefaultItemIdentifiers:}}
+\index{toolbarDefaultItemIdentifiers:@{toolbarDefaultItemIdentifiers:}!CMWindowController@{CMWindowController}}
+\subsubsection[toolbarDefaultItemIdentifiers:]{\setlength{\rightskip}{0pt plus 5cm}- (NSArray $\ast$) toolbarDefaultItemIdentifiers: (NSToolbar $\ast$) {\em toolbar}}}
+\label{interface_c_m_window_controller_a279ef0d596af18bf3cc33be365cc77c}
+
+
+\hypertarget{interface_c_m_window_controller_eac4c2bb1286f184886ac4ad40af899a}{
+\index{CMWindowController@{CMWindowController}!toolbarHeight@{toolbarHeight}}
+\index{toolbarHeight@{toolbarHeight}!CMWindowController@{CMWindowController}}
+\subsubsection[toolbarHeight]{\setlength{\rightskip}{0pt plus 5cm}- (float) toolbarHeight }}
+\label{interface_c_m_window_controller_eac4c2bb1286f184886ac4ad40af899a}
+
+
+\hypertarget{interface_c_m_window_controller_09a848e0edfe89c56c873f0ccec55ec8}{
+\index{CMWindowController@{CMWindowController}!toolbarSelectableItemIdentifiers:@{toolbarSelectableItemIdentifiers:}}
+\index{toolbarSelectableItemIdentifiers:@{toolbarSelectableItemIdentifiers:}!CMWindowController@{CMWindowController}}
+\subsubsection[toolbarSelectableItemIdentifiers:]{\setlength{\rightskip}{0pt plus 5cm}- (NSArray $\ast$) toolbarSelectableItemIdentifiers: (NSToolbar $\ast$) {\em toolbar}}}
+\label{interface_c_m_window_controller_09a848e0edfe89c56c873f0ccec55ec8}
+
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{interface_c_m_window_controller_a673b337109398fa2b8e138fe9f08224}{
+\index{CMWindowController@{CMWindowController}!advancedView@{advancedView}}
+\index{advancedView@{advancedView}!CMWindowController@{CMWindowController}}
+\subsubsection[advancedView]{\setlength{\rightskip}{0pt plus 5cm}- (IBOutlet {\bf NSView} $\ast$) {\bf advancedView}\hspace{0.3cm}{\tt  \mbox{[}protected\mbox{]}}}}
+\label{interface_c_m_window_controller_a673b337109398fa2b8e138fe9f08224}
+
+
+\hypertarget{interface_c_m_window_controller_2e4a8415c4a28ff7638696cb4b650161}{
+\index{CMWindowController@{CMWindowController}!contextsView@{contextsView}}
+\index{contextsView@{contextsView}!CMWindowController@{CMWindowController}}
+\subsubsection[contextsView]{\setlength{\rightskip}{0pt plus 5cm}- (IBOutlet {\bf NSView} $\ast$) {\bf contextsView}\hspace{0.3cm}{\tt  \mbox{[}protected\mbox{]}}}}
+\label{interface_c_m_window_controller_2e4a8415c4a28ff7638696cb4b650161}
+
+
+\hypertarget{interface_c_m_window_controller_dc91051bebb3076d4484530e736622ca}{
+\index{CMWindowController@{CMWindowController}!currentPrefsGroup@{currentPrefsGroup}}
+\index{currentPrefsGroup@{currentPrefsGroup}!CMWindowController@{CMWindowController}}
+\subsubsection[currentPrefsGroup]{\setlength{\rightskip}{0pt plus 5cm}- ({\bf NSString}$\ast$) {\bf currentPrefsGroup}\hspace{0.3cm}{\tt  \mbox{[}protected\mbox{]}}}}
+\label{interface_c_m_window_controller_dc91051bebb3076d4484530e736622ca}
+
+
+\hypertarget{interface_c_m_window_controller_7e4bdab922f64da0ae1c66ff5a8f538a}{
+\index{CMWindowController@{CMWindowController}!currentPrefsView@{currentPrefsView}}
+\index{currentPrefsView@{currentPrefsView}!CMWindowController@{CMWindowController}}
+\subsubsection[currentPrefsView]{\setlength{\rightskip}{0pt plus 5cm}- ({\bf NSView}$\ast$) {\bf currentPrefsView}\hspace{0.3cm}{\tt  \mbox{[}protected\mbox{]}}}}
+\label{interface_c_m_window_controller_7e4bdab922f64da0ae1c66ff5a8f538a}
+
+
+\hypertarget{interface_c_m_window_controller_0208b15d4c7cc22d9b04f66eef0173ed}{
+\index{CMWindowController@{CMWindowController}!generalView@{generalView}}
+\index{generalView@{generalView}!CMWindowController@{CMWindowController}}
+\subsubsection[generalView]{\setlength{\rightskip}{0pt plus 5cm}- (IBOutlet {\bf NSView}$\ast$) {\bf generalView}\hspace{0.3cm}{\tt  \mbox{[}protected\mbox{]}}}}
+\label{interface_c_m_window_controller_0208b15d4c7cc22d9b04f66eef0173ed}
+
+
+\hypertarget{interface_c_m_window_controller_110a03075bf89edcf25208d579cc0374}{
+\index{CMWindowController@{CMWindowController}!listSplitter@{listSplitter}}
+\index{listSplitter@{listSplitter}!CMWindowController@{CMWindowController}}
+\subsubsection[listSplitter]{\setlength{\rightskip}{0pt plus 5cm}- (IBOutlet id) {\bf listSplitter}\hspace{0.3cm}{\tt  \mbox{[}protected\mbox{]}}}}
+\label{interface_c_m_window_controller_110a03075bf89edcf25208d579cc0374}
+
+
+\hypertarget{interface_c_m_window_controller_8924cca99f80e7b215068a23d375edce}{
+\index{CMWindowController@{CMWindowController}!listSplitterPlaceholder@{listSplitterPlaceholder}}
+\index{listSplitterPlaceholder@{listSplitterPlaceholder}!CMWindowController@{CMWindowController}}
+\subsubsection[listSplitterPlaceholder]{\setlength{\rightskip}{0pt plus 5cm}- (IBOutlet id) {\bf listSplitterPlaceholder}\hspace{0.3cm}{\tt  \mbox{[}protected\mbox{]}}}}
+\label{interface_c_m_window_controller_8924cca99f80e7b215068a23d375edce}
+
+
+\hypertarget{interface_c_m_window_controller_d5dd5cafd76b4d008e0ddbc92b928e1b}{
+\index{CMWindowController@{CMWindowController}!prefsGroups@{prefsGroups}}
+\index{prefsGroups@{prefsGroups}!CMWindowController@{CMWindowController}}
+\subsubsection[prefsGroups]{\setlength{\rightskip}{0pt plus 5cm}- (NSArray$\ast$) {\bf prefsGroups}\hspace{0.3cm}{\tt  \mbox{[}protected\mbox{]}}}}
+\label{interface_c_m_window_controller_d5dd5cafd76b4d008e0ddbc92b928e1b}
+
+
+\hypertarget{interface_c_m_window_controller_5e33dd8ae9308216fe56beab45097ec7}{
+\index{CMWindowController@{CMWindowController}!prefsToolbar@{prefsToolbar}}
+\index{prefsToolbar@{prefsToolbar}!CMWindowController@{CMWindowController}}
+\subsubsection[prefsToolbar]{\setlength{\rightskip}{0pt plus 5cm}- (NSToolbar$\ast$) {\bf prefsToolbar}\hspace{0.3cm}{\tt  \mbox{[}protected\mbox{]}}}}
+\label{interface_c_m_window_controller_5e33dd8ae9308216fe56beab45097ec7}
+
+
+\hypertarget{interface_c_m_window_controller_dd05105cac35dbf0b02c10086e183fdd}{
+\index{CMWindowController@{CMWindowController}!rulesView@{rulesView}}
+\index{rulesView@{rulesView}!CMWindowController@{CMWindowController}}
+\subsubsection[rulesView]{\setlength{\rightskip}{0pt plus 5cm}- (IBOutlet id) {\bf rulesView}\hspace{0.3cm}{\tt  \mbox{[}protected\mbox{]}}}}
+\label{interface_c_m_window_controller_dd05105cac35dbf0b02c10086e183fdd}
+
+
+\hypertarget{interface_c_m_window_controller_e1c749543503661c7956761c6f10b95f}{
+\index{CMWindowController@{CMWindowController}!sourceSplitter@{sourceSplitter}}
+\index{sourceSplitter@{sourceSplitter}!CMWindowController@{CMWindowController}}
+\subsubsection[sourceSplitter]{\setlength{\rightskip}{0pt plus 5cm}- (IBOutlet id) {\bf sourceSplitter}\hspace{0.3cm}{\tt  \mbox{[}protected\mbox{]}}}}
+\label{interface_c_m_window_controller_e1c749543503661c7956761c6f10b95f}
+
+
+\hypertarget{interface_c_m_window_controller_7c3e1c39774afa7401869ed51460e7c3}{
+\index{CMWindowController@{CMWindowController}!sourceSplitterPlaceholder@{sourceSplitterPlaceholder}}
+\index{sourceSplitterPlaceholder@{sourceSplitterPlaceholder}!CMWindowController@{CMWindowController}}
+\subsubsection[sourceSplitterPlaceholder]{\setlength{\rightskip}{0pt plus 5cm}- (IBOutlet id) {\bf sourceSplitterPlaceholder}\hspace{0.3cm}{\tt  \mbox{[}protected\mbox{]}}}}
+\label{interface_c_m_window_controller_7c3e1c39774afa7401869ed51460e7c3}
+
+
+\hypertarget{interface_c_m_window_controller_0534aae4f0512cb2da96464157f04b75}{
+\index{CMWindowController@{CMWindowController}!sourceView@{sourceView}}
+\index{sourceView@{sourceView}!CMWindowController@{CMWindowController}}
+\subsubsection[sourceView]{\setlength{\rightskip}{0pt plus 5cm}- (IBOutlet DBSourceView$\ast$) {\bf sourceView}\hspace{0.3cm}{\tt  \mbox{[}protected\mbox{]}}}}
+\label{interface_c_m_window_controller_0534aae4f0512cb2da96464157f04b75}
+
+
+
+
+The documentation for this class was generated from the following files:\begin{CompactItemize}
+\item 
+/Users/hortont/Code/Carmen/\hyperlink{_c_m_window_controller_8h}{CMWindowController.h}\item 
+/Users/hortont/Code/Carmen/\hyperlink{_c_m_window_controller_8m}{CMWindowController.m}\end{CompactItemize}

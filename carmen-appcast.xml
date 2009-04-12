@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+	<channel>
+		<title>Carmen Changelog</title>
+		<link>http://hortot2.stu.rpi.edu/carmen-appcast.xml</link>
+		<description>Most recent changes with links to updates.</description>
+		<language>en</language>      
+		<item>
+			<title>Version 1.0 (Initial Release)</title>
+			<pubDate>Sun, 04 May 2008 00:00:00 +0000</pubDate>
+			<enclosure url="http://hortot2.stu.rpi.edu/Carmen_1.0.zip" type="application/octet-stream"/>
+		</item>
+	</channel>
+</rss>

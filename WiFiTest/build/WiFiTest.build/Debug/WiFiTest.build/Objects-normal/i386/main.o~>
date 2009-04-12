@@ -1,0 +1,3 @@
+/Users/hortont/Desktop/ /WiFiTest/main.m: In function 'main':
+/Users/hortont/Desktop/ /WiFiTest/main.m:25: warning: implicit declaration of function 'scanAirport'
+/Users/hortont/Desktop/ /WiFiTest/main.m:59: warning: implicit declaration of function 'locationProbability'

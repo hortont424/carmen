@@ -1,0 +1,188 @@
+\hypertarget{interface_c_m_context}{
+\section{CMContext Class Reference}
+\label{interface_c_m_context}\index{CMContext@{CMContext}}
+}
+{\tt \#import $<$CMContext.h$>$}
+
+Inherits \hyperlink{class_n_s_object}{NSObject}.
+
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+(void) - \hyperlink{interface_c_m_context_2c1b7c478eb09a0fe18237991416462f}{addChild:}
+\item 
+(void) - \hyperlink{interface_c_m_context_836a1f40530fd5c09eb81a15ea61be43}{addRule:}
+\item 
+(NSMutableArray $\ast$) - \hyperlink{interface_c_m_context_2828bdd4fcd99c44429a54ed10d86dbb}{children}
+\item 
+(unsigned int) - \hyperlink{interface_c_m_context_c456cbfa10d53fcd6c7ec7fdab0644d5}{depth}
+\item 
+(id) - \hyperlink{interface_c_m_context_44890ef96f04231219626f757c7622dd}{initWithName:}
+\item 
+(\hyperlink{class_n_s_string}{NSString} $\ast$) - \hyperlink{interface_c_m_context_09bba5cf669815a66c52b7d9a7a04aff}{name}
+\item 
+(\hyperlink{interface_c_m_context}{CMContext} $\ast$) - \hyperlink{interface_c_m_context_097e65518b8aff7b0b4d7967eb303ccd}{parent}
+\item 
+(\hyperlink{class_n_s_string}{NSString} $\ast$) - \hyperlink{interface_c_m_context_274205e5dc456dc18d30fe1a187cbed2}{recursiveName}
+\item 
+(NSMutableArray $\ast$) - \hyperlink{interface_c_m_context_3172da5bae6fbeb71d260b18140df650}{rules}
+\item 
+(\hyperlink{class_n_s_string}{NSString} $\ast$) - \hyperlink{interface_c_m_context_1341d62c2d2eee6cfb60a44a5cbafd8d}{schemeFragment}
+\item 
+(void) - \hyperlink{interface_c_m_context_582070ae69c46783271f513aff1f74e7}{setName:}
+\item 
+(void) - \hyperlink{interface_c_m_context_61e3e9525bfb5c4beeb9c9c9f07b7f3d}{setParent:}
+\item 
+(\hyperlink{class_n_s_string}{NSString} $\ast$) - \hyperlink{interface_c_m_context_a3920f2822db39752c950c0606cad3a5}{uuid}
+\end{CompactItemize}
+\subsection*{Protected Attributes}
+\begin{CompactItemize}
+\item 
+NSMutableArray $\ast$ \hyperlink{interface_c_m_context_0f56af66d0edbc10d1ab24342416b8f0}{children}
+\item 
+\hyperlink{class_n_s_string}{NSString} $\ast$ \hyperlink{interface_c_m_context_46c82635439f9fa7e72ea26658c75e9b}{name}
+\item 
+\hyperlink{interface_c_m_context}{CMContext} $\ast$ \hyperlink{interface_c_m_context_c34d30931a639b237c9249b65641180a}{parent}
+\item 
+NSMutableArray $\ast$ \hyperlink{interface_c_m_context_9ce88fc0f29f5c91c2b88343332d179c}{rules}
+\item 
+\hyperlink{class_n_s_string}{NSString} $\ast$ \hyperlink{interface_c_m_context_35d03d537cce465cc6ec2e40279e9355}{uuid}
+\end{CompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_c_m_context_2c1b7c478eb09a0fe18237991416462f}{
+\index{CMContext@{CMContext}!addChild:@{addChild:}}
+\index{addChild:@{addChild:}!CMContext@{CMContext}}
+\subsubsection[addChild:]{\setlength{\rightskip}{0pt plus 5cm}- (void) addChild: ({\bf CMContext} $\ast$) {\em newChild}}}
+\label{interface_c_m_context_2c1b7c478eb09a0fe18237991416462f}
+
+
+\hypertarget{interface_c_m_context_836a1f40530fd5c09eb81a15ea61be43}{
+\index{CMContext@{CMContext}!addRule:@{addRule:}}
+\index{addRule:@{addRule:}!CMContext@{CMContext}}
+\subsubsection[addRule:]{\setlength{\rightskip}{0pt plus 5cm}- (void) addRule: ({\bf CMRule} $\ast$) {\em newRule}}}
+\label{interface_c_m_context_836a1f40530fd5c09eb81a15ea61be43}
+
+
+\hypertarget{interface_c_m_context_2828bdd4fcd99c44429a54ed10d86dbb}{
+\index{CMContext@{CMContext}!children@{children}}
+\index{children@{children}!CMContext@{CMContext}}
+\subsubsection[children]{\setlength{\rightskip}{0pt plus 5cm}- (NSMutableArray $\ast$) {\bf children} }}
+\label{interface_c_m_context_2828bdd4fcd99c44429a54ed10d86dbb}
+
+
+\hypertarget{interface_c_m_context_c456cbfa10d53fcd6c7ec7fdab0644d5}{
+\index{CMContext@{CMContext}!depth@{depth}}
+\index{depth@{depth}!CMContext@{CMContext}}
+\subsubsection[depth]{\setlength{\rightskip}{0pt plus 5cm}- (unsigned int) depth }}
+\label{interface_c_m_context_c456cbfa10d53fcd6c7ec7fdab0644d5}
+
+
+\hypertarget{interface_c_m_context_44890ef96f04231219626f757c7622dd}{
+\index{CMContext@{CMContext}!initWithName:@{initWithName:}}
+\index{initWithName:@{initWithName:}!CMContext@{CMContext}}
+\subsubsection[initWithName:]{\setlength{\rightskip}{0pt plus 5cm}- (id) initWithName: ({\bf NSString} $\ast$) {\em newName}}}
+\label{interface_c_m_context_44890ef96f04231219626f757c7622dd}
+
+
+\hypertarget{interface_c_m_context_09bba5cf669815a66c52b7d9a7a04aff}{
+\index{CMContext@{CMContext}!name@{name}}
+\index{name@{name}!CMContext@{CMContext}}
+\subsubsection[name]{\setlength{\rightskip}{0pt plus 5cm}- ({\bf NSString} $\ast$) {\bf name} }}
+\label{interface_c_m_context_09bba5cf669815a66c52b7d9a7a04aff}
+
+
+\hypertarget{interface_c_m_context_097e65518b8aff7b0b4d7967eb303ccd}{
+\index{CMContext@{CMContext}!parent@{parent}}
+\index{parent@{parent}!CMContext@{CMContext}}
+\subsubsection[parent]{\setlength{\rightskip}{0pt plus 5cm}- ({\bf CMContext} $\ast$) {\bf parent} }}
+\label{interface_c_m_context_097e65518b8aff7b0b4d7967eb303ccd}
+
+
+\hypertarget{interface_c_m_context_274205e5dc456dc18d30fe1a187cbed2}{
+\index{CMContext@{CMContext}!recursiveName@{recursiveName}}
+\index{recursiveName@{recursiveName}!CMContext@{CMContext}}
+\subsubsection[recursiveName]{\setlength{\rightskip}{0pt plus 5cm}- ({\bf NSString} $\ast$) recursiveName }}
+\label{interface_c_m_context_274205e5dc456dc18d30fe1a187cbed2}
+
+
+\hypertarget{interface_c_m_context_3172da5bae6fbeb71d260b18140df650}{
+\index{CMContext@{CMContext}!rules@{rules}}
+\index{rules@{rules}!CMContext@{CMContext}}
+\subsubsection[rules]{\setlength{\rightskip}{0pt plus 5cm}- (NSMutableArray $\ast$) {\bf rules} }}
+\label{interface_c_m_context_3172da5bae6fbeb71d260b18140df650}
+
+
+\hypertarget{interface_c_m_context_1341d62c2d2eee6cfb60a44a5cbafd8d}{
+\index{CMContext@{CMContext}!schemeFragment@{schemeFragment}}
+\index{schemeFragment@{schemeFragment}!CMContext@{CMContext}}
+\subsubsection[schemeFragment]{\setlength{\rightskip}{0pt plus 5cm}- ({\bf NSString} $\ast$) schemeFragment }}
+\label{interface_c_m_context_1341d62c2d2eee6cfb60a44a5cbafd8d}
+
+
+\hypertarget{interface_c_m_context_582070ae69c46783271f513aff1f74e7}{
+\index{CMContext@{CMContext}!setName:@{setName:}}
+\index{setName:@{setName:}!CMContext@{CMContext}}
+\subsubsection[setName:]{\setlength{\rightskip}{0pt plus 5cm}- (void) setName: ({\bf NSString} $\ast$) {\em newName}}}
+\label{interface_c_m_context_582070ae69c46783271f513aff1f74e7}
+
+
+\hypertarget{interface_c_m_context_61e3e9525bfb5c4beeb9c9c9f07b7f3d}{
+\index{CMContext@{CMContext}!setParent:@{setParent:}}
+\index{setParent:@{setParent:}!CMContext@{CMContext}}
+\subsubsection[setParent:]{\setlength{\rightskip}{0pt plus 5cm}- (void) setParent: ({\bf CMContext} $\ast$) {\em newParent}}}
+\label{interface_c_m_context_61e3e9525bfb5c4beeb9c9c9f07b7f3d}
+
+
+\hypertarget{interface_c_m_context_a3920f2822db39752c950c0606cad3a5}{
+\index{CMContext@{CMContext}!uuid@{uuid}}
+\index{uuid@{uuid}!CMContext@{CMContext}}
+\subsubsection[uuid]{\setlength{\rightskip}{0pt plus 5cm}- ({\bf NSString} $\ast$) {\bf uuid} }}
+\label{interface_c_m_context_a3920f2822db39752c950c0606cad3a5}
+
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{interface_c_m_context_0f56af66d0edbc10d1ab24342416b8f0}{
+\index{CMContext@{CMContext}!children@{children}}
+\index{children@{children}!CMContext@{CMContext}}
+\subsubsection[children]{\setlength{\rightskip}{0pt plus 5cm}- (NSMutableArray $\ast$) {\bf children}\hspace{0.3cm}{\tt  \mbox{[}protected\mbox{]}}}}
+\label{interface_c_m_context_0f56af66d0edbc10d1ab24342416b8f0}
+
+
+\hypertarget{interface_c_m_context_46c82635439f9fa7e72ea26658c75e9b}{
+\index{CMContext@{CMContext}!name@{name}}
+\index{name@{name}!CMContext@{CMContext}}
+\subsubsection[name]{\setlength{\rightskip}{0pt plus 5cm}- ({\bf NSString} $\ast$) {\bf name}\hspace{0.3cm}{\tt  \mbox{[}protected\mbox{]}}}}
+\label{interface_c_m_context_46c82635439f9fa7e72ea26658c75e9b}
+
+
+\hypertarget{interface_c_m_context_c34d30931a639b237c9249b65641180a}{
+\index{CMContext@{CMContext}!parent@{parent}}
+\index{parent@{parent}!CMContext@{CMContext}}
+\subsubsection[parent]{\setlength{\rightskip}{0pt plus 5cm}- ({\bf CMContext} $\ast$) {\bf parent}\hspace{0.3cm}{\tt  \mbox{[}protected\mbox{]}}}}
+\label{interface_c_m_context_c34d30931a639b237c9249b65641180a}
+
+
+\hypertarget{interface_c_m_context_9ce88fc0f29f5c91c2b88343332d179c}{
+\index{CMContext@{CMContext}!rules@{rules}}
+\index{rules@{rules}!CMContext@{CMContext}}
+\subsubsection[rules]{\setlength{\rightskip}{0pt plus 5cm}- (NSMutableArray $\ast$) {\bf rules}\hspace{0.3cm}{\tt  \mbox{[}protected\mbox{]}}}}
+\label{interface_c_m_context_9ce88fc0f29f5c91c2b88343332d179c}
+
+
+\hypertarget{interface_c_m_context_35d03d537cce465cc6ec2e40279e9355}{
+\index{CMContext@{CMContext}!uuid@{uuid}}
+\index{uuid@{uuid}!CMContext@{CMContext}}
+\subsubsection[uuid]{\setlength{\rightskip}{0pt plus 5cm}- ({\bf NSString} $\ast$) {\bf uuid}\hspace{0.3cm}{\tt  \mbox{[}protected\mbox{]}}}}
+\label{interface_c_m_context_35d03d537cce465cc6ec2e40279e9355}
+
+
+
+
+The documentation for this class was generated from the following files:\begin{CompactItemize}
+\item 
+/Users/hortont/Code/Carmen/\hyperlink{_c_m_context_8h}{CMContext.h}\item 
+/Users/hortont/Code/Carmen/\hyperlink{_c_m_context_8m}{CMContext.m}\end{CompactItemize}

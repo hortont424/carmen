@@ -1,0 +1,147 @@
+\hypertarget{interface_c_m_rule}{
+\section{CMRule Class Reference}
+\label{interface_c_m_rule}\index{CMRule@{CMRule}}
+}
+{\tt \#import $<$CMRule.h$>$}
+
+Inherits \hyperlink{class_n_s_object}{NSObject}.
+
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+(\hyperlink{class_n_s_string}{NSString} $\ast$) - \hyperlink{interface_c_m_rule_51963c06e66c9a9d7ca93720b4aa71c6}{description}
+\item 
+(NSImage $\ast$) - \hyperlink{interface_c_m_rule_5ab693404be3d6c9c23d32bf4aeba7b9}{icon}
+\item 
+(NSNumber $\ast$) - \hyperlink{interface_c_m_rule_aa7715326f511deb561ac41501a194f9}{priority}
+\item 
+(\hyperlink{class_n_s_string}{NSString} $\ast$) - \hyperlink{interface_c_m_rule_02379e3a0f736406489213d7383c30ef}{schemeFragment}
+\item 
+(void) - \hyperlink{interface_c_m_rule_ad8e35c1a1a8d51196b404ac777ba605}{setIcon:}
+\item 
+(void) - \hyperlink{interface_c_m_rule_2b25aeb05541e065609bb4f9b2753563}{setPriority:}
+\item 
+(void) - \hyperlink{interface_c_m_rule_423429401c268d2591fd138ca03bf494}{setSchemeFragment:}
+\item 
+(void) - \hyperlink{interface_c_m_rule_72255be9d9d50884e692835f461d906e}{setTitle:}
+\item 
+(\hyperlink{class_n_s_string}{NSString} $\ast$) - \hyperlink{interface_c_m_rule_f628df2a3f47e8a1e61edfcc99e7d01f}{title}
+\end{CompactItemize}
+\subsection*{Protected Attributes}
+\begin{CompactItemize}
+\item 
+NSImage $\ast$ \hyperlink{interface_c_m_rule_ba7185a99d1799e91609c1e83d9201a0}{icon}
+\item 
+\hyperlink{class_n_s_string}{NSString} $\ast$ \hyperlink{interface_c_m_rule_483ee55143e0ed678e8b64f4d11c719e}{schemeFragment}
+\item 
+\hyperlink{class_n_s_string}{NSString} $\ast$ \hyperlink{interface_c_m_rule_5fd61a026220fa129d974771be6b4b4d}{title}
+\end{CompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_c_m_rule_51963c06e66c9a9d7ca93720b4aa71c6}{
+\index{CMRule@{CMRule}!description@{description}}
+\index{description@{description}!CMRule@{CMRule}}
+\subsubsection[description]{\setlength{\rightskip}{0pt plus 5cm}- ({\bf NSString} $\ast$) description }}
+\label{interface_c_m_rule_51963c06e66c9a9d7ca93720b4aa71c6}
+
+
+
+
+\begin{Desc}
+\item[\hyperlink{todo__todo000005}{Todo}]really this needs to be more smart.... to understand negation and stuff... \end{Desc}
+
+
+\begin{Desc}
+\item[\hyperlink{todo__todo000005}{Todo}]maybe go through and replace every function call with $\ast$-description, and create alternate versions of every builtin (and default $\ast$-descriptions for user created functions that don't do anything...) which modify the text intelligently to what they do... \end{Desc}
+\hypertarget{interface_c_m_rule_5ab693404be3d6c9c23d32bf4aeba7b9}{
+\index{CMRule@{CMRule}!icon@{icon}}
+\index{icon@{icon}!CMRule@{CMRule}}
+\subsubsection[icon]{\setlength{\rightskip}{0pt plus 5cm}- (NSImage $\ast$) {\bf icon} }}
+\label{interface_c_m_rule_5ab693404be3d6c9c23d32bf4aeba7b9}
+
+
+\hypertarget{interface_c_m_rule_aa7715326f511deb561ac41501a194f9}{
+\index{CMRule@{CMRule}!priority@{priority}}
+\index{priority@{priority}!CMRule@{CMRule}}
+\subsubsection[priority]{\setlength{\rightskip}{0pt plus 5cm}- (NSNumber $\ast$) priority }}
+\label{interface_c_m_rule_aa7715326f511deb561ac41501a194f9}
+
+
+\hypertarget{interface_c_m_rule_02379e3a0f736406489213d7383c30ef}{
+\index{CMRule@{CMRule}!schemeFragment@{schemeFragment}}
+\index{schemeFragment@{schemeFragment}!CMRule@{CMRule}}
+\subsubsection[schemeFragment]{\setlength{\rightskip}{0pt plus 5cm}- ({\bf NSString} $\ast$) {\bf schemeFragment} }}
+\label{interface_c_m_rule_02379e3a0f736406489213d7383c30ef}
+
+
+\hypertarget{interface_c_m_rule_ad8e35c1a1a8d51196b404ac777ba605}{
+\index{CMRule@{CMRule}!setIcon:@{setIcon:}}
+\index{setIcon:@{setIcon:}!CMRule@{CMRule}}
+\subsubsection[setIcon:]{\setlength{\rightskip}{0pt plus 5cm}- (void) setIcon: (NSImage $\ast$) {\em newIcon}}}
+\label{interface_c_m_rule_ad8e35c1a1a8d51196b404ac777ba605}
+
+
+\hypertarget{interface_c_m_rule_2b25aeb05541e065609bb4f9b2753563}{
+\index{CMRule@{CMRule}!setPriority:@{setPriority:}}
+\index{setPriority:@{setPriority:}!CMRule@{CMRule}}
+\subsubsection[setPriority:]{\setlength{\rightskip}{0pt plus 5cm}- (void) setPriority: (NSNumber $\ast$) {\em newPriority}}}
+\label{interface_c_m_rule_2b25aeb05541e065609bb4f9b2753563}
+
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em newPriority}]an NSNumber representing the priority to be set\end{description}
+\end{Desc}
+Parses the current schemeFragment, finds the (rule a p) call, replaces p with the new priority, then generates a new scheme fragment. \hypertarget{interface_c_m_rule_423429401c268d2591fd138ca03bf494}{
+\index{CMRule@{CMRule}!setSchemeFragment:@{setSchemeFragment:}}
+\index{setSchemeFragment:@{setSchemeFragment:}!CMRule@{CMRule}}
+\subsubsection[setSchemeFragment:]{\setlength{\rightskip}{0pt plus 5cm}- (void) setSchemeFragment: ({\bf NSString} $\ast$) {\em newSchemeFragment}}}
+\label{interface_c_m_rule_423429401c268d2591fd138ca03bf494}
+
+
+\hypertarget{interface_c_m_rule_72255be9d9d50884e692835f461d906e}{
+\index{CMRule@{CMRule}!setTitle:@{setTitle:}}
+\index{setTitle:@{setTitle:}!CMRule@{CMRule}}
+\subsubsection[setTitle:]{\setlength{\rightskip}{0pt plus 5cm}- (void) setTitle: ({\bf NSString} $\ast$) {\em newTitle}}}
+\label{interface_c_m_rule_72255be9d9d50884e692835f461d906e}
+
+
+\hypertarget{interface_c_m_rule_f628df2a3f47e8a1e61edfcc99e7d01f}{
+\index{CMRule@{CMRule}!title@{title}}
+\index{title@{title}!CMRule@{CMRule}}
+\subsubsection[title]{\setlength{\rightskip}{0pt plus 5cm}- ({\bf NSString} $\ast$) {\bf title} }}
+\label{interface_c_m_rule_f628df2a3f47e8a1e61edfcc99e7d01f}
+
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{interface_c_m_rule_ba7185a99d1799e91609c1e83d9201a0}{
+\index{CMRule@{CMRule}!icon@{icon}}
+\index{icon@{icon}!CMRule@{CMRule}}
+\subsubsection[icon]{\setlength{\rightskip}{0pt plus 5cm}- (NSImage $\ast$) {\bf icon}\hspace{0.3cm}{\tt  \mbox{[}protected\mbox{]}}}}
+\label{interface_c_m_rule_ba7185a99d1799e91609c1e83d9201a0}
+
+
+\hypertarget{interface_c_m_rule_483ee55143e0ed678e8b64f4d11c719e}{
+\index{CMRule@{CMRule}!schemeFragment@{schemeFragment}}
+\index{schemeFragment@{schemeFragment}!CMRule@{CMRule}}
+\subsubsection[schemeFragment]{\setlength{\rightskip}{0pt plus 5cm}- ({\bf NSString} $\ast$) {\bf schemeFragment}\hspace{0.3cm}{\tt  \mbox{[}protected\mbox{]}}}}
+\label{interface_c_m_rule_483ee55143e0ed678e8b64f4d11c719e}
+
+
+\hypertarget{interface_c_m_rule_5fd61a026220fa129d974771be6b4b4d}{
+\index{CMRule@{CMRule}!title@{title}}
+\index{title@{title}!CMRule@{CMRule}}
+\subsubsection[title]{\setlength{\rightskip}{0pt plus 5cm}- ({\bf NSString} $\ast$) {\bf title}\hspace{0.3cm}{\tt  \mbox{[}protected\mbox{]}}}}
+\label{interface_c_m_rule_5fd61a026220fa129d974771be6b4b4d}
+
+
+
+
+The documentation for this class was generated from the following files:\begin{CompactItemize}
+\item 
+/Users/hortont/Code/Carmen/\hyperlink{_c_m_rule_8h}{CMRule.h}\item 
+/Users/hortont/Code/Carmen/\hyperlink{_c_m_rule_8m}{CMRule.m}\end{CompactItemize}

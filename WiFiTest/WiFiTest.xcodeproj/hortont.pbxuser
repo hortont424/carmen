@@ -1,0 +1,167 @@
+// !$*UTF8*$!
+{
+	29B97313FDCFA39411CA2CEA /* Project object */ = {
+		activeArchitecture = i386;
+		activeBuildConfigurationName = Debug;
+		activeExecutable = 353B7BEC0D9E66A700139368 /* WiFiTest */;
+		activeTarget = 8D1107260486CEB800E47090 /* WiFiTest */;
+		addToTargets = (
+			8D1107260486CEB800E47090 /* WiFiTest */,
+		);
+		codeSenseManager = 353B7BFA0D9E66C600139368 /* Code sense */;
+		executables = (
+			353B7BEC0D9E66A700139368 /* WiFiTest */,
+		);
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					837,
+					20,
+					48,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 228653646;
+			PBXWorkspaceStateSaveDate = 228653646;
+		};
+		perUserProjectItems = {
+			353B7C320D9E6A4B00139368 /* PBXTextBookmark */ = 353B7C320D9E6A4B00139368 /* PBXTextBookmark */;
+			3576C6B30D9E7BCF001E6CFC /* PBXTextBookmark */ = 3576C6B30D9E7BCF001E6CFC /* PBXTextBookmark */;
+			3576C6B50D9E7BCF001E6CFC /* PBXTextBookmark */ = 3576C6B50D9E7BCF001E6CFC /* PBXTextBookmark */;
+			35A32AB00DA0F7670004A6C0 /* PBXTextBookmark */ = 35A32AB00DA0F7670004A6C0 /* PBXTextBookmark */;
+			35F99B310DA0FAB500A07ED4 /* PBXTextBookmark */ = 35F99B310DA0FAB500A07ED4 /* PBXTextBookmark */;
+		};
+		sourceControlManager = 353B7BF90D9E66C600139368 /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	29B97316FDCFA39411CA2CEA /* main.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1015, 938}}";
+			sepNavSelRange = "{212, 1578}";
+			sepNavVisRange = "{176, 1617}";
+		};
+	};
+	351DC4020D9E7AD600F3BE20 /* bayes.pl */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = text.script.perl;
+		name = bayes.pl;
+		path = "/Users/hortont/Documents/My Projects/Baylicious/bayes.pl";
+		sourceTree = "<absolute>";
+	};
+	353B7BEC0D9E66A700139368 /* WiFiTest */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = WiFiTest;
+		savedGlobals = {
+		};
+		sourceDirectories = (
+		);
+	};
+	353B7BF90D9E66C600139368 /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+		};
+	};
+	353B7BFA0D9E66C600139368 /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	353B7C010D9E677A00139368 /* Apple80211.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1008, 4662}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{2254, 1647}";
+			sepNavWindowFrame = "{{484, 0}, {842, 878}}";
+		};
+	};
+	353B7C320D9E6A4B00139368 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 29B97316FDCFA39411CA2CEA /* main.m */;
+		name = "main.m: 49";
+		rLen = 0;
+		rLoc = 2449;
+		rType = 0;
+		vrLen = 1335;
+		vrLoc = 123;
+	};
+	3576C6B30D9E7BCF001E6CFC /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 351DC4020D9E7AD600F3BE20 /* bayes.pl */;
+		name = "bayes.pl: 15";
+		rLen = 0;
+		rLoc = 220;
+		rType = 0;
+		vrLen = 1079;
+		vrLoc = 0;
+	};
+	3576C6B50D9E7BCF001E6CFC /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 351DC4020D9E7AD600F3BE20 /* bayes.pl */;
+		name = "bayes.pl: 15";
+		rLen = 0;
+		rLoc = 220;
+		rType = 0;
+		vrLen = 1079;
+		vrLoc = 0;
+	};
+	35A32AB00DA0F7670004A6C0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 29B97316FDCFA39411CA2CEA /* main.m */;
+		name = "main.m: 99";
+		rLen = 0;
+		rLoc = 2204;
+		rType = 0;
+		vrLen = 1617;
+		vrLoc = 1739;
+	};
+	35F99B310DA0FAB500A07ED4 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 29B97316FDCFA39411CA2CEA /* main.m */;
+		name = "main.m: 16";
+		rLen = 1578;
+		rLoc = 212;
+		rType = 0;
+		vrLen = 1617;
+		vrLoc = 176;
+	};
+	8D1107260486CEB800E47090 /* WiFiTest */ = {
+		activeExec = 0;
+		executables = (
+			353B7BEC0D9E66A700139368 /* WiFiTest */,
+		);
+	};
+}

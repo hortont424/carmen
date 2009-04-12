@@ -1,0 +1,164 @@
+// !$*UTF8*$!
+{
+	089C1669FE841209C02AAC07 /* Project object */ = {
+		activeArchitecture = i386;
+		activeBuildConfigurationName = Debug;
+		activeTarget = 8D5B49AC048680CD000E48DA /* SDUSBTrigger */;
+		addToTargets = (
+			8D5B49AC048680CD000E48DA /* SDUSBTrigger */,
+		);
+		codeSenseManager = 3563240D0DB2B6CD003D394C /* Code sense */;
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					931,
+					20,
+					48,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 229837178;
+			PBXWorkspaceStateSaveDate = 229837178;
+		};
+		perUserProjectItems = {
+			3563241E0DB2B952003D394C /* PBXTextBookmark */ = 3563241E0DB2B952003D394C /* PBXTextBookmark */;
+			3563241F0DB2B952003D394C /* PBXTextBookmark */ = 3563241F0DB2B952003D394C /* PBXTextBookmark */;
+			356413BA0DB2F77900274C45 /* PBXTextBookmark */ = 356413BA0DB2F77900274C45 /* PBXTextBookmark */;
+			356413D60DB2F7D500274C45 /* PBXTextBookmark */ = 356413D60DB2F7D500274C45 /* PBXTextBookmark */;
+			356414A30DB3096D00274C45 /* PBXTextBookmark */ = 356414A30DB3096D00274C45 /* PBXTextBookmark */;
+			356414A70DB3096D00274C45 /* PBXTextBookmark */ = 356414A70DB3096D00274C45 /* PBXTextBookmark */;
+			356414BA0DB3098600274C45 /* PBXTextBookmark */ = 356414BA0DB3098600274C45 /* PBXTextBookmark */;
+		};
+		sourceControlManager = 3563240C0DB2B6CD003D394C /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	3563240C0DB2B6CD003D394C /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+		};
+	};
+	3563240D0DB2B6CD003D394C /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	3563240E0DB2B6DA003D394C /* SDUSBTrigger.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1109, 761}}";
+			sepNavSelRange = "{157, 0}";
+			sepNavVisRange = "{0, 250}";
+			sepNavWindowFrame = "{{15, -5}, {892, 878}}";
+		};
+	};
+	3563240F0DB2B6DA003D394C /* SDUSBTrigger.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1109, 966}}";
+			sepNavSelRange = "{1152, 37}";
+			sepNavVisRange = "{0, 1041}";
+		};
+	};
+	356324110DB2B8B0003D394C /* SDTrigger.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1109, 761}}";
+			sepNavSelRange = "{308, 0}";
+			sepNavVisRange = "{0, 342}";
+			sepNavWindowFrame = "{{15, -5}, {892, 878}}";
+		};
+	};
+	3563241E0DB2B952003D394C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3563240F0DB2B6DA003D394C /* SDUSBTrigger.m */;
+		name = "SDUSBTrigger.m: 15";
+		rLen = 0;
+		rLoc = 1224;
+		rType = 0;
+		vrLen = 209;
+		vrLoc = 0;
+	};
+	3563241F0DB2B952003D394C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3563240E0DB2B6DA003D394C /* SDUSBTrigger.h */;
+		name = "SDUSBTrigger.h: 9";
+		rLen = 0;
+		rLoc = 157;
+		rType = 0;
+		vrLen = 250;
+		vrLoc = 0;
+	};
+	356413BA0DB2F77900274C45 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3563240E0DB2B6DA003D394C /* SDUSBTrigger.h */;
+		name = "SDUSBTrigger.h: 9";
+		rLen = 0;
+		rLoc = 157;
+		rType = 0;
+		vrLen = 250;
+		vrLoc = 0;
+	};
+	356413D60DB2F7D500274C45 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 356413D70DB2F7D500274C45 /* guiletest.c */;
+		name = "guiletest.c: 5";
+		rLen = 755;
+		rLoc = 62;
+		rType = 0;
+		vrLen = 1377;
+		vrLoc = 0;
+	};
+	356413D70DB2F7D500274C45 /* guiletest.c */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.c;
+		name = guiletest.c;
+		path = /Users/hortont/Desktop/guiletest.c;
+		sourceTree = "<absolute>";
+	};
+	356414A30DB3096D00274C45 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 356413D70DB2F7D500274C45 /* guiletest.c */;
+		name = "guiletest.c: 5";
+		rLen = 755;
+		rLoc = 62;
+		rType = 0;
+		vrLen = 1262;
+		vrLoc = 1023;
+	};
+	356414A70DB3096D00274C45 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3563240F0DB2B6DA003D394C /* SDUSBTrigger.m */;
+		name = "SDUSBTrigger.m: 65";
+		rLen = 37;
+		rLoc = 1152;
+		rType = 0;
+		vrLen = 946;
+		vrLoc = 278;
+	};
+	356414BA0DB3098600274C45 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3563240F0DB2B6DA003D394C /* SDUSBTrigger.m */;
+		name = "SDUSBTrigger.m: 65";
+		rLen = 37;
+		rLoc = 1152;
+		rType = 0;
+		vrLen = 987;
+		vrLoc = 0;
+	};
+	8D5B49AC048680CD000E48DA /* SDUSBTrigger */ = {
+		activeExec = 0;
+	};
+}

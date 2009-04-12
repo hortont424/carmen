@@ -1,0 +1,134 @@
+\hypertarget{interface_c_m_rules_view_controller}{
+\section{CMRulesViewController Class Reference}
+\label{interface_c_m_rules_view_controller}\index{CMRulesViewController@{CMRulesViewController}}
+}
+{\tt \#import $<$CMRulesViewController.h$>$}
+
+Inherits \hyperlink{class_n_s_object}{NSObject}.
+
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+(void) - \hyperlink{interface_c_m_rules_view_controller_8a78381207d0ccc077468c8d58345d3f}{animationDone:}{\tt  \mbox{[}implementation\mbox{]}}
+\item 
+(void) - \hyperlink{interface_c_m_rules_view_controller_62e036822b9cdb8fc4a5621e4b8f5410}{awakeFromNib}{\tt  \mbox{[}implementation\mbox{]}}
+\item 
+(void) - \hyperlink{interface_c_m_rules_view_controller_06431433b50af112217d1e368b22d884}{doubleClick:}
+\item 
+(int) - \hyperlink{interface_c_m_rules_view_controller_b55de149fb96787ab46ce0d37e0d45a8}{numberOfRowsInTableView:}{\tt  \mbox{[}implementation\mbox{]}}
+\item 
+(id) - \hyperlink{interface_c_m_rules_view_controller_4da6fe124a27e394012a3f174c1c5119}{tableView:objectValueForTableColumn:row:}{\tt  \mbox{[}implementation\mbox{]}}
+\item 
+(void) - \hyperlink{interface_c_m_rules_view_controller_7fa971e307cfeb2a3393dfeb12ceae86}{tableView:setObjectValue:forTableColumn:row:}{\tt  \mbox{[}implementation\mbox{]}}
+\item 
+(void) - \hyperlink{interface_c_m_rules_view_controller_9fef190c8951a9381a37c36be99505fa}{updateRuleList:}{\tt  \mbox{[}implementation\mbox{]}}
+\item 
+(void) - \hyperlink{interface_c_m_rules_view_controller_6d2a8b5f182e84bd6a2b6a9d43b3d7d4}{updateTrigger}{\tt  \mbox{[}implementation\mbox{]}}
+\end{CompactItemize}
+\subsection*{Protected Attributes}
+\begin{CompactItemize}
+\item 
+IBOutlet id \hyperlink{interface_c_m_rules_view_controller_ab511e1066292c82ecbd7187c5dd1864}{propertiesView}
+\item 
+IBOutlet NSTableView $\ast$ \hyperlink{interface_c_m_rules_view_controller_161aabbfe4b9b65705556ffaff0dd9e4}{rulesView}
+\item 
+IBOutlet NSScrollView $\ast$ \hyperlink{interface_c_m_rules_view_controller_31993d58dfd51aaa2674586ecc227639}{scrollView}
+\item 
+IBOutlet NSOutlineView $\ast$ \hyperlink{interface_c_m_rules_view_controller_3c85b2976be441808b68898aaf1224d9}{sourceView}
+\end{CompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_c_m_rules_view_controller_8a78381207d0ccc077468c8d58345d3f}{
+\index{CMRulesViewController@{CMRulesViewController}!animationDone:@{animationDone:}}
+\index{animationDone:@{animationDone:}!CMRulesViewController@{CMRulesViewController}}
+\subsubsection[animationDone:]{\setlength{\rightskip}{0pt plus 5cm}- (void) animationDone: (NSTimer $\ast$) {\em timer}\hspace{0.3cm}{\tt  \mbox{[}implementation\mbox{]}}}}
+\label{interface_c_m_rules_view_controller_8a78381207d0ccc077468c8d58345d3f}
+
+
+\hypertarget{interface_c_m_rules_view_controller_62e036822b9cdb8fc4a5621e4b8f5410}{
+\index{CMRulesViewController@{CMRulesViewController}!awakeFromNib@{awakeFromNib}}
+\index{awakeFromNib@{awakeFromNib}!CMRulesViewController@{CMRulesViewController}}
+\subsubsection[awakeFromNib]{\setlength{\rightskip}{0pt plus 5cm}- (void) awakeFromNib \hspace{0.3cm}{\tt  \mbox{[}implementation\mbox{]}}}}
+\label{interface_c_m_rules_view_controller_62e036822b9cdb8fc4a5621e4b8f5410}
+
+
+\hypertarget{interface_c_m_rules_view_controller_06431433b50af112217d1e368b22d884}{
+\index{CMRulesViewController@{CMRulesViewController}!doubleClick:@{doubleClick:}}
+\index{doubleClick:@{doubleClick:}!CMRulesViewController@{CMRulesViewController}}
+\subsubsection[doubleClick:]{\setlength{\rightskip}{0pt plus 5cm}- (void) doubleClick: (id) {\em sender}}}
+\label{interface_c_m_rules_view_controller_06431433b50af112217d1e368b22d884}
+
+
+\hypertarget{interface_c_m_rules_view_controller_b55de149fb96787ab46ce0d37e0d45a8}{
+\index{CMRulesViewController@{CMRulesViewController}!numberOfRowsInTableView:@{numberOfRowsInTableView:}}
+\index{numberOfRowsInTableView:@{numberOfRowsInTableView:}!CMRulesViewController@{CMRulesViewController}}
+\subsubsection[numberOfRowsInTableView:]{\setlength{\rightskip}{0pt plus 5cm}- (int) numberOfRowsInTableView: (NSTableView $\ast$) {\em aTableView}\hspace{0.3cm}{\tt  \mbox{[}implementation\mbox{]}}}}
+\label{interface_c_m_rules_view_controller_b55de149fb96787ab46ce0d37e0d45a8}
+
+
+\hypertarget{interface_c_m_rules_view_controller_4da6fe124a27e394012a3f174c1c5119}{
+\index{CMRulesViewController@{CMRulesViewController}!tableView:objectValueForTableColumn:row:@{tableView:objectValueForTableColumn:row:}}
+\index{tableView:objectValueForTableColumn:row:@{tableView:objectValueForTableColumn:row:}!CMRulesViewController@{CMRulesViewController}}
+\subsubsection[tableView:objectValueForTableColumn:row:]{\setlength{\rightskip}{0pt plus 5cm}- (id) tableView: (NSTableView $\ast$) {\em aTableView}\/ objectValueForTableColumn: (NSTableColumn $\ast$) {\em aTableColumn}\/ row: (int) {\em rowIndex}\hspace{0.3cm}{\tt  \mbox{[}implementation\mbox{]}}}}
+\label{interface_c_m_rules_view_controller_4da6fe124a27e394012a3f174c1c5119}
+
+
+\hypertarget{interface_c_m_rules_view_controller_7fa971e307cfeb2a3393dfeb12ceae86}{
+\index{CMRulesViewController@{CMRulesViewController}!tableView:setObjectValue:forTableColumn:row:@{tableView:setObjectValue:forTableColumn:row:}}
+\index{tableView:setObjectValue:forTableColumn:row:@{tableView:setObjectValue:forTableColumn:row:}!CMRulesViewController@{CMRulesViewController}}
+\subsubsection[tableView:setObjectValue:forTableColumn:row:]{\setlength{\rightskip}{0pt plus 5cm}- (void) tableView: (NSTableView $\ast$) {\em aTableView}\/ setObjectValue: (id) {\em anObject}\/ forTableColumn: (NSTableColumn $\ast$) {\em aTableColumn}\/ row: (int) {\em rowIndex}\hspace{0.3cm}{\tt  \mbox{[}implementation\mbox{]}}}}
+\label{interface_c_m_rules_view_controller_7fa971e307cfeb2a3393dfeb12ceae86}
+
+
+\hypertarget{interface_c_m_rules_view_controller_9fef190c8951a9381a37c36be99505fa}{
+\index{CMRulesViewController@{CMRulesViewController}!updateRuleList:@{updateRuleList:}}
+\index{updateRuleList:@{updateRuleList:}!CMRulesViewController@{CMRulesViewController}}
+\subsubsection[updateRuleList:]{\setlength{\rightskip}{0pt plus 5cm}- (void) updateRuleList: (NSNotification $\ast$) {\em notification}\hspace{0.3cm}{\tt  \mbox{[}implementation\mbox{]}}}}
+\label{interface_c_m_rules_view_controller_9fef190c8951a9381a37c36be99505fa}
+
+
+\hypertarget{interface_c_m_rules_view_controller_6d2a8b5f182e84bd6a2b6a9d43b3d7d4}{
+\index{CMRulesViewController@{CMRulesViewController}!updateTrigger@{updateTrigger}}
+\index{updateTrigger@{updateTrigger}!CMRulesViewController@{CMRulesViewController}}
+\subsubsection[updateTrigger]{\setlength{\rightskip}{0pt plus 5cm}- (void) updateTrigger \hspace{0.3cm}{\tt  \mbox{[}implementation\mbox{]}}}}
+\label{interface_c_m_rules_view_controller_6d2a8b5f182e84bd6a2b6a9d43b3d7d4}
+
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{interface_c_m_rules_view_controller_ab511e1066292c82ecbd7187c5dd1864}{
+\index{CMRulesViewController@{CMRulesViewController}!propertiesView@{propertiesView}}
+\index{propertiesView@{propertiesView}!CMRulesViewController@{CMRulesViewController}}
+\subsubsection[propertiesView]{\setlength{\rightskip}{0pt plus 5cm}- (IBOutlet id) {\bf propertiesView}\hspace{0.3cm}{\tt  \mbox{[}protected\mbox{]}}}}
+\label{interface_c_m_rules_view_controller_ab511e1066292c82ecbd7187c5dd1864}
+
+
+\hypertarget{interface_c_m_rules_view_controller_161aabbfe4b9b65705556ffaff0dd9e4}{
+\index{CMRulesViewController@{CMRulesViewController}!rulesView@{rulesView}}
+\index{rulesView@{rulesView}!CMRulesViewController@{CMRulesViewController}}
+\subsubsection[rulesView]{\setlength{\rightskip}{0pt plus 5cm}- (IBOutlet NSTableView$\ast$) {\bf rulesView}\hspace{0.3cm}{\tt  \mbox{[}protected\mbox{]}}}}
+\label{interface_c_m_rules_view_controller_161aabbfe4b9b65705556ffaff0dd9e4}
+
+
+\hypertarget{interface_c_m_rules_view_controller_31993d58dfd51aaa2674586ecc227639}{
+\index{CMRulesViewController@{CMRulesViewController}!scrollView@{scrollView}}
+\index{scrollView@{scrollView}!CMRulesViewController@{CMRulesViewController}}
+\subsubsection[scrollView]{\setlength{\rightskip}{0pt plus 5cm}- (IBOutlet NSScrollView$\ast$) {\bf scrollView}\hspace{0.3cm}{\tt  \mbox{[}protected\mbox{]}}}}
+\label{interface_c_m_rules_view_controller_31993d58dfd51aaa2674586ecc227639}
+
+
+\hypertarget{interface_c_m_rules_view_controller_3c85b2976be441808b68898aaf1224d9}{
+\index{CMRulesViewController@{CMRulesViewController}!sourceView@{sourceView}}
+\index{sourceView@{sourceView}!CMRulesViewController@{CMRulesViewController}}
+\subsubsection[sourceView]{\setlength{\rightskip}{0pt plus 5cm}- (IBOutlet NSOutlineView$\ast$) {\bf sourceView}\hspace{0.3cm}{\tt  \mbox{[}protected\mbox{]}}}}
+\label{interface_c_m_rules_view_controller_3c85b2976be441808b68898aaf1224d9}
+
+
+
+
+The documentation for this class was generated from the following files:\begin{CompactItemize}
+\item 
+/Users/hortont/Code/Carmen/\hyperlink{_c_m_rules_view_controller_8h}{CMRulesViewController.h}\item 
+/Users/hortont/Code/Carmen/\hyperlink{_c_m_rules_view_controller_8m}{CMRulesViewController.m}\end{CompactItemize}

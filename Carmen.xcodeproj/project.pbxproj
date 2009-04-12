@@ -1,0 +1,732 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD58140DA1D0A300B32029 /* MainMenu.xib */; };
+		350390380DDF80F20019B6CD /* CMTriggerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 350390370DDF80F20019B6CD /* CMTriggerController.m */; };
+		35305C770E2CA4390098073A /* CMFrequencyValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 35305C760E2CA4390098073A /* CMFrequencyValueTransformer.m */; };
+		3537F5230DE106C40093BA77 /* libsexp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3537F5220DE106C40093BA77 /* libsexp.a */; };
+		354A8FEE0E2DA9400066C645 /* CMPropertiesView.m in Sources */ = {isa = PBXBuildFile; fileRef = 354A8FED0E2DA9400066C645 /* CMPropertiesView.m */; };
+		354A910D0E2DC0A30066C645 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 354A910C0E2DC0A30066C645 /* QuartzCore.framework */; };
+		355AF2EE0DCFD27200E9658A /* CMSourceListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 355AF2ED0DCFD27200E9658A /* CMSourceListController.m */; };
+		357E6E7D0DCDA2B700C7D851 /* CarmenController.m in Sources */ = {isa = PBXBuildFile; fileRef = 357E6E7C0DCDA2B700C7D851 /* CarmenController.m */; };
+		357F959D0DCF4690004C59DB /* DBSourceSplitView.m in Sources */ = {isa = PBXBuildFile; fileRef = 357F95960DCF4690004C59DB /* DBSourceSplitView.m */; };
+		357F959E0DCF4690004C59DB /* DBSourceView.m in Sources */ = {isa = PBXBuildFile; fileRef = 357F95980DCF4690004C59DB /* DBSourceView.m */; };
+		357F959F0DCF4690004C59DB /* DBListSplitView.m in Sources */ = {isa = PBXBuildFile; fileRef = 357F959A0DCF4690004C59DB /* DBListSplitView.m */; };
+		357F95A00DCF4690004C59DB /* KFSplitView.m in Sources */ = {isa = PBXBuildFile; fileRef = 357F959C0DCF4690004C59DB /* KFSplitView.m */; };
+		357F95AC0DCF46AF004C59DB /* Add.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 357F95A30DCF46AF004C59DB /* Add.tiff */; };
+		357F95AD0DCF46AF004C59DB /* Add_Pressed.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 357F95A40DCF46AF004C59DB /* Add_Pressed.tiff */; };
+		357F95AE0DCF46AF004C59DB /* Add_Disabled.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 357F95A50DCF46AF004C59DB /* Add_Disabled.tiff */; };
+		357F95AF0DCF46AF004C59DB /* Delete.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 357F95A60DCF46AF004C59DB /* Delete.tiff */; };
+		357F95B00DCF46AF004C59DB /* Delete_Disabled.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 357F95A70DCF46AF004C59DB /* Delete_Disabled.tiff */; };
+		357F95B10DCF46AF004C59DB /* Delete_Pressed.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 357F95A80DCF46AF004C59DB /* Delete_Pressed.tiff */; };
+		357F95B20DCF46AF004C59DB /* DBListSplitViewBar.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 357F95A90DCF46AF004C59DB /* DBListSplitViewBar.tiff */; };
+		357F95B30DCF46AF004C59DB /* DBListSplitViewDimple.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 357F95AA0DCF46AF004C59DB /* DBListSplitViewDimple.tiff */; };
+		357F95B40DCF46AF004C59DB /* Folder.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 357F95AB0DCF46AF004C59DB /* Folder.tiff */; };
+		357F96550DCF4AF9004C59DB /* DBBottomButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 357F96540DCF4AF9004C59DB /* DBBottomButton.m */; };
+		357F965D0DCF4B17004C59DB /* DBSourceSplitViewThumb.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 357F965B0DCF4B17004C59DB /* DBSourceSplitViewThumb.tiff */; };
+		357F965E0DCF4B17004C59DB /* BottomBar.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 357F965C0DCF4B17004C59DB /* BottomBar.tiff */; };
+		358BAB390DCD6E640002C9B2 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 358BAB380DCD6E640002C9B2 /* Sparkle.framework */; };
+		358BAB500DCD6EB00002C9B2 /* Sparkle.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 358BAB380DCD6E640002C9B2 /* Sparkle.framework */; };
+		358BAB720DCD7E9F0002C9B2 /* CMStatusMenuItemController.m in Sources */ = {isa = PBXBuildFile; fileRef = 358BAB710DCD7E9F0002C9B2 /* CMStatusMenuItemController.m */; };
+		358BACEA0DCD87B70002C9B2 /* carmen-statusmenuicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 358BACE90DCD87B70002C9B2 /* carmen-statusmenuicon.png */; };
+		358BAE5F0DCD969A0002C9B2 /* CMContextController.m in Sources */ = {isa = PBXBuildFile; fileRef = 358BAE5E0DCD969A0002C9B2 /* CMContextController.m */; };
+		358BAE670DCD976E0002C9B2 /* CMContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 358BAE660DCD976E0002C9B2 /* CMContext.m */; };
+		358BAE6C0DCD986B0002C9B2 /* CMStringAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 358BAE6B0DCD986B0002C9B2 /* CMStringAdditions.m */; };
+		359D762A0E2B4E82005E883B /* CarmenHelp in Resources */ = {isa = PBXBuildFile; fileRef = 359D75EA0E2B4E82005E883B /* CarmenHelp */; };
+		35AEE3AC0E2AB99200AFC792 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35AEE3AB0E2AB99200AFC792 /* IOKit.framework */; };
+		35B40EC50DD1F4200029350C /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 35B40EC40DD1F4200029350C /* Credits.rtf */; };
+		35BC21680E29CFDB00DCFF02 /* sexp_addons.c in Sources */ = {isa = PBXBuildFile; fileRef = 35BC21670E29CFDB00DCFF02 /* sexp_addons.c */; };
+		35BD152D0DE0D5B600F6193C /* libguile.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 35BD152B0DE0D5B600F6193C /* libguile.dylib */; };
+		35BD152E0DE0D5B600F6193C /* libgmp.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 35BD152C0DE0D5B600F6193C /* libgmp.dylib */; };
+		35D35ED00DDF6279007F3D1E /* CMRulesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35D35ECF0DDF6279007F3D1E /* CMRulesViewController.m */; };
+		35D35F5F0DDF6A7F007F3D1E /* picture.png in Resources */ = {isa = PBXBuildFile; fileRef = 35D35F5E0DDF6A7F007F3D1E /* picture.png */; };
+		35D3603C0DDF76BE007F3D1E /* CMRule.m in Sources */ = {isa = PBXBuildFile; fileRef = 35D3603B0DDF76BE007F3D1E /* CMRule.m */; };
+		35F41CCF0DCDC89800D498C0 /* carmen-icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 35F41CCE0DCDC89800D498C0 /* carmen-icon.icns */; };
+		35F41FFA0DCEF19200D498C0 /* Growl-WithInstaller.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35F41FF90DCEF19200D498C0 /* Growl-WithInstaller.framework */; };
+		35F420020DCEF19500D498C0 /* Growl-WithInstaller.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 35F41FF90DCEF19200D498C0 /* Growl-WithInstaller.framework */; };
+		35F4203F0DCEF6E600D498C0 /* CMGrowlPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 35F4203E0DCEF6E600D498C0 /* CMGrowlPlugin.m */; };
+		35F421350DCF112A00D498C0 /* CMWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35F421340DCF112A00D498C0 /* CMWindowController.m */; };
+		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
+		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
+		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		35BD14880DE0B42F00F6193C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35BD14810DE0B42F00F6193C /* CMLightTrigger.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8D5B49B6048680CD000E48DA;
+			remoteInfo = CMLightTrigger;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		358BAB540DCD6EBC0002C9B2 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				35F420020DCEF19500D498C0 /* Growl-WithInstaller.framework in CopyFiles */,
+				358BAB500DCD6EB00002C9B2 /* Sparkle.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		13E42FB307B3F0F600E4EEF1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
+		1DDD58150DA1D0A300B32029 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		32CA4F630368D1EE00C91783 /* Carmen_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Carmen_Prefix.pch; sourceTree = "<group>"; };
+		350390350DDF80F20019B6CD /* CMTrigger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMTrigger.h; sourceTree = "<group>"; };
+		350390360DDF80F20019B6CD /* CMTriggerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMTriggerController.h; sourceTree = "<group>"; };
+		350390370DDF80F20019B6CD /* CMTriggerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMTriggerController.m; sourceTree = "<group>"; };
+		35305C750E2CA4390098073A /* CMFrequencyValueTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMFrequencyValueTransformer.h; sourceTree = "<group>"; };
+		35305C760E2CA4390098073A /* CMFrequencyValueTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMFrequencyValueTransformer.m; sourceTree = "<group>"; };
+		3537F51B0DE106B70093BA77 /* cstring.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cstring.h; path = sexpr/src/cstring.h; sourceTree = "<group>"; };
+		3537F51C0DE106B70093BA77 /* faststack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = faststack.h; path = sexpr/src/faststack.h; sourceTree = "<group>"; };
+		3537F51D0DE106B70093BA77 /* sexp_errors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = sexp_errors.h; path = sexpr/src/sexp_errors.h; sourceTree = "<group>"; };
+		3537F51E0DE106B70093BA77 /* sexp_memory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = sexp_memory.h; path = sexpr/src/sexp_memory.h; sourceTree = "<group>"; };
+		3537F51F0DE106B70093BA77 /* sexp_vis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = sexp_vis.h; path = sexpr/src/sexp_vis.h; sourceTree = "<group>"; };
+		3537F5200DE106B70093BA77 /* sexp_ops.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = sexp_ops.h; path = sexpr/src/sexp_ops.h; sourceTree = "<group>"; };
+		3537F5210DE106B70093BA77 /* sexp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = sexp.h; path = sexpr/src/sexp.h; sourceTree = "<group>"; };
+		3537F5220DE106C40093BA77 /* libsexp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libsexp.a; path = sexpr/src/libsexp.a; sourceTree = "<group>"; };
+		354A8FEC0E2DA9400066C645 /* CMPropertiesView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMPropertiesView.h; sourceTree = "<group>"; };
+		354A8FED0E2DA9400066C645 /* CMPropertiesView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMPropertiesView.m; sourceTree = "<group>"; };
+		354A910C0E2DC0A30066C645 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = /System/Library/Frameworks/QuartzCore.framework; sourceTree = "<absolute>"; };
+		355AF2EC0DCFD27200E9658A /* CMSourceListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMSourceListController.h; sourceTree = "<group>"; };
+		355AF2ED0DCFD27200E9658A /* CMSourceListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMSourceListController.m; sourceTree = "<group>"; };
+		357E6E7B0DCDA2B700C7D851 /* CarmenController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarmenController.h; sourceTree = "<group>"; };
+		357E6E7C0DCDA2B700C7D851 /* CarmenController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarmenController.m; sourceTree = "<group>"; };
+		357F95950DCF4690004C59DB /* DBSourceSplitView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBSourceSplitView.h; sourceTree = "<group>"; };
+		357F95960DCF4690004C59DB /* DBSourceSplitView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBSourceSplitView.m; sourceTree = "<group>"; };
+		357F95970DCF4690004C59DB /* DBSourceView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBSourceView.h; sourceTree = "<group>"; };
+		357F95980DCF4690004C59DB /* DBSourceView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBSourceView.m; sourceTree = "<group>"; };
+		357F95990DCF4690004C59DB /* DBListSplitView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBListSplitView.h; sourceTree = "<group>"; };
+		357F959A0DCF4690004C59DB /* DBListSplitView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBListSplitView.m; sourceTree = "<group>"; };
+		357F959B0DCF4690004C59DB /* KFSplitView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KFSplitView.h; sourceTree = "<group>"; };
+		357F959C0DCF4690004C59DB /* KFSplitView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KFSplitView.m; sourceTree = "<group>"; };
+		357F95A30DCF46AF004C59DB /* Add.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = Add.tiff; sourceTree = "<group>"; };
+		357F95A40DCF46AF004C59DB /* Add_Pressed.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = Add_Pressed.tiff; sourceTree = "<group>"; };
+		357F95A50DCF46AF004C59DB /* Add_Disabled.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = Add_Disabled.tiff; sourceTree = "<group>"; };
+		357F95A60DCF46AF004C59DB /* Delete.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = Delete.tiff; sourceTree = "<group>"; };
+		357F95A70DCF46AF004C59DB /* Delete_Disabled.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = Delete_Disabled.tiff; sourceTree = "<group>"; };
+		357F95A80DCF46AF004C59DB /* Delete_Pressed.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = Delete_Pressed.tiff; sourceTree = "<group>"; };
+		357F95A90DCF46AF004C59DB /* DBListSplitViewBar.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = DBListSplitViewBar.tiff; sourceTree = "<group>"; };
+		357F95AA0DCF46AF004C59DB /* DBListSplitViewDimple.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = DBListSplitViewDimple.tiff; sourceTree = "<group>"; };
+		357F95AB0DCF46AF004C59DB /* Folder.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = Folder.tiff; sourceTree = "<group>"; };
+		357F96530DCF4AF9004C59DB /* DBBottomButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBBottomButton.h; sourceTree = "<group>"; };
+		357F96540DCF4AF9004C59DB /* DBBottomButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBBottomButton.m; sourceTree = "<group>"; };
+		357F965B0DCF4B17004C59DB /* DBSourceSplitViewThumb.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = DBSourceSplitViewThumb.tiff; sourceTree = "<group>"; };
+		357F965C0DCF4B17004C59DB /* BottomBar.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = BottomBar.tiff; sourceTree = "<group>"; };
+		358BAB380DCD6E640002C9B2 /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sparkle.framework; sourceTree = "<group>"; };
+		358BAB700DCD7E9F0002C9B2 /* CMStatusMenuItemController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMStatusMenuItemController.h; sourceTree = "<group>"; };
+		358BAB710DCD7E9F0002C9B2 /* CMStatusMenuItemController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMStatusMenuItemController.m; sourceTree = "<group>"; };
+		358BACE90DCD87B70002C9B2 /* carmen-statusmenuicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "carmen-statusmenuicon.png"; sourceTree = "<group>"; };
+		358BAE5D0DCD969A0002C9B2 /* CMContextController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMContextController.h; sourceTree = "<group>"; };
+		358BAE5E0DCD969A0002C9B2 /* CMContextController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMContextController.m; sourceTree = "<group>"; };
+		358BAE650DCD976E0002C9B2 /* CMContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMContext.h; sourceTree = "<group>"; };
+		358BAE660DCD976E0002C9B2 /* CMContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMContext.m; sourceTree = "<group>"; };
+		358BAE6A0DCD986B0002C9B2 /* CMStringAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMStringAdditions.h; sourceTree = "<group>"; };
+		358BAE6B0DCD986B0002C9B2 /* CMStringAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMStringAdditions.m; sourceTree = "<group>"; };
+		359D75EA0E2B4E82005E883B /* CarmenHelp */ = {isa = PBXFileReference; lastKnownFileType = folder; path = CarmenHelp; sourceTree = "<group>"; };
+		35AEE3AB0E2AB99200AFC792 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = /System/Library/Frameworks/IOKit.framework; sourceTree = "<absolute>"; };
+		35B40EC40DD1F4200029350C /* Credits.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = Credits.rtf; sourceTree = "<group>"; };
+		35BC21660E29CFDB00DCFF02 /* sexp_addons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sexp_addons.h; sourceTree = "<group>"; };
+		35BC21670E29CFDB00DCFF02 /* sexp_addons.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sexp_addons.c; sourceTree = "<group>"; };
+		35BD14810DE0B42F00F6193C /* CMLightTrigger.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CMLightTrigger.xcodeproj; path = CMLightTrigger/CMLightTrigger.xcodeproj; sourceTree = "<group>"; };
+		35BD152B0DE0D5B600F6193C /* libguile.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libguile.dylib; path = /opt/local/lib/libguile.dylib; sourceTree = "<absolute>"; };
+		35BD152C0DE0D5B600F6193C /* libgmp.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libgmp.dylib; path = /opt/local/lib/libgmp.dylib; sourceTree = "<absolute>"; };
+		35D35ECE0DDF6279007F3D1E /* CMRulesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMRulesViewController.h; sourceTree = "<group>"; };
+		35D35ECF0DDF6279007F3D1E /* CMRulesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMRulesViewController.m; sourceTree = "<group>"; };
+		35D35F5E0DDF6A7F007F3D1E /* picture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = picture.png; sourceTree = "<group>"; };
+		35D3603A0DDF76BE007F3D1E /* CMRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMRule.h; sourceTree = "<group>"; };
+		35D3603B0DDF76BE007F3D1E /* CMRule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMRule.m; sourceTree = "<group>"; };
+		35F41CCE0DCDC89800D498C0 /* carmen-icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = "carmen-icon.icns"; sourceTree = "<group>"; };
+		35F41FF90DCEF19200D498C0 /* Growl-WithInstaller.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = "Growl-WithInstaller.framework"; sourceTree = "<group>"; };
+		35F4203D0DCEF6E600D498C0 /* CMGrowlPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMGrowlPlugin.h; sourceTree = "<group>"; };
+		35F4203E0DCEF6E600D498C0 /* CMGrowlPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMGrowlPlugin.m; sourceTree = "<group>"; };
+		35F421330DCF112A00D498C0 /* CMWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMWindowController.h; sourceTree = "<group>"; };
+		35F421340DCF112A00D498C0 /* CMWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMWindowController.m; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D1107320486CEB800E47090 /* Carmen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Carmen.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D11072E0486CEB800E47090 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
+				358BAB390DCD6E640002C9B2 /* Sparkle.framework in Frameworks */,
+				35F41FFA0DCEF19200D498C0 /* Growl-WithInstaller.framework in Frameworks */,
+				35BD152D0DE0D5B600F6193C /* libguile.dylib in Frameworks */,
+				35BD152E0DE0D5B600F6193C /* libgmp.dylib in Frameworks */,
+				3537F5230DE106C40093BA77 /* libsexp.a in Frameworks */,
+				35AEE3AC0E2AB99200AFC792 /* IOKit.framework in Frameworks */,
+				354A910D0E2DC0A30066C645 /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				35305C720E2CA4260098073A /* Cocoa Extensions */,
+				357E6E7B0DCDA2B700C7D851 /* CarmenController.h */,
+				357E6E7C0DCDA2B700C7D851 /* CarmenController.m */,
+				358BAE5D0DCD969A0002C9B2 /* CMContextController.h */,
+				358BAE5E0DCD969A0002C9B2 /* CMContextController.m */,
+				358BAEEB0DCD9C2C0002C9B2 /* User Interface */,
+				35D3603E0DDF76D6007F3D1E /* Growl */,
+				35D3603D0DDF76C3007F3D1E /* Data Storage */,
+				3503903D0DDF821D0019B6CD /* Triggers */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				35AEE3AB0E2AB99200AFC792 /* IOKit.framework */,
+				3537F5220DE106C40093BA77 /* libsexp.a */,
+				35BD152B0DE0D5B600F6193C /* libguile.dylib */,
+				35BD152C0DE0D5B600F6193C /* libgmp.dylib */,
+				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
+				13E42FB307B3F0F600E4EEF1 /* CoreData.framework */,
+				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107320486CEB800E47090 /* Carmen.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* Carmen */ = {
+			isa = PBXGroup;
+			children = (
+				3537F5160DE1069D0093BA77 /* sexpr */,
+				35BD147D0DE0B41800F6193C /* Plugins */,
+				357F95C60DCF4745004C59DB /* Borrowed Code */,
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = Carmen;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32CA4F630368D1EE00C91783 /* Carmen_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				359D75EA0E2B4E82005E883B /* CarmenHelp */,
+				35B40EC40DD1F4200029350C /* Credits.rtf */,
+				35D35F5E0DDF6A7F007F3D1E /* picture.png */,
+				357F96AD0DCF4E92004C59DB /* UI Images */,
+				35F41CCE0DCDC89800D498C0 /* carmen-icon.icns */,
+				358BACE90DCD87B70002C9B2 /* carmen-statusmenuicon.png */,
+				8D1107310486CEB800E47090 /* Info.plist */,
+				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
+				1DDD58140DA1D0A300B32029 /* MainMenu.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				354A910C0E2DC0A30066C645 /* QuartzCore.framework */,
+				358BAB4E0DCD6E6D0002C9B2 /* Copied Frameworks */,
+				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
+				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3503903D0DDF821D0019B6CD /* Triggers */ = {
+			isa = PBXGroup;
+			children = (
+				350390350DDF80F20019B6CD /* CMTrigger.h */,
+				350390360DDF80F20019B6CD /* CMTriggerController.h */,
+				350390370DDF80F20019B6CD /* CMTriggerController.m */,
+			);
+			name = Triggers;
+			sourceTree = "<group>";
+		};
+		35305C720E2CA4260098073A /* Cocoa Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				358BAE6A0DCD986B0002C9B2 /* CMStringAdditions.h */,
+				358BAE6B0DCD986B0002C9B2 /* CMStringAdditions.m */,
+				35305C750E2CA4390098073A /* CMFrequencyValueTransformer.h */,
+				35305C760E2CA4390098073A /* CMFrequencyValueTransformer.m */,
+			);
+			name = "Cocoa Extensions";
+			sourceTree = "<group>";
+		};
+		3537F5160DE1069D0093BA77 /* sexpr */ = {
+			isa = PBXGroup;
+			children = (
+				3537F51B0DE106B70093BA77 /* cstring.h */,
+				3537F51C0DE106B70093BA77 /* faststack.h */,
+				3537F51D0DE106B70093BA77 /* sexp_errors.h */,
+				3537F51E0DE106B70093BA77 /* sexp_memory.h */,
+				3537F51F0DE106B70093BA77 /* sexp_vis.h */,
+				3537F5200DE106B70093BA77 /* sexp_ops.h */,
+				3537F5210DE106B70093BA77 /* sexp.h */,
+				35BC21660E29CFDB00DCFF02 /* sexp_addons.h */,
+				35BC21670E29CFDB00DCFF02 /* sexp_addons.c */,
+			);
+			name = sexpr;
+			sourceTree = "<group>";
+		};
+		357F95C60DCF4745004C59DB /* Borrowed Code */ = {
+			isa = PBXGroup;
+			children = (
+				357F95950DCF4690004C59DB /* DBSourceSplitView.h */,
+				357F95960DCF4690004C59DB /* DBSourceSplitView.m */,
+				357F95970DCF4690004C59DB /* DBSourceView.h */,
+				357F95980DCF4690004C59DB /* DBSourceView.m */,
+				357F95990DCF4690004C59DB /* DBListSplitView.h */,
+				357F959A0DCF4690004C59DB /* DBListSplitView.m */,
+				357F959B0DCF4690004C59DB /* KFSplitView.h */,
+				357F959C0DCF4690004C59DB /* KFSplitView.m */,
+				357F96530DCF4AF9004C59DB /* DBBottomButton.h */,
+				357F96540DCF4AF9004C59DB /* DBBottomButton.m */,
+			);
+			name = "Borrowed Code";
+			sourceTree = "<group>";
+		};
+		357F96AD0DCF4E92004C59DB /* UI Images */ = {
+			isa = PBXGroup;
+			children = (
+				357F95A30DCF46AF004C59DB /* Add.tiff */,
+				357F95A40DCF46AF004C59DB /* Add_Pressed.tiff */,
+				357F95A50DCF46AF004C59DB /* Add_Disabled.tiff */,
+				357F95A60DCF46AF004C59DB /* Delete.tiff */,
+				357F95A70DCF46AF004C59DB /* Delete_Disabled.tiff */,
+				357F95A80DCF46AF004C59DB /* Delete_Pressed.tiff */,
+				357F95A90DCF46AF004C59DB /* DBListSplitViewBar.tiff */,
+				357F95AA0DCF46AF004C59DB /* DBListSplitViewDimple.tiff */,
+				357F965B0DCF4B17004C59DB /* DBSourceSplitViewThumb.tiff */,
+				357F965C0DCF4B17004C59DB /* BottomBar.tiff */,
+				357F95AB0DCF46AF004C59DB /* Folder.tiff */,
+			);
+			name = "UI Images";
+			sourceTree = "<group>";
+		};
+		358BAB4E0DCD6E6D0002C9B2 /* Copied Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				35F41FF90DCEF19200D498C0 /* Growl-WithInstaller.framework */,
+				358BAB380DCD6E640002C9B2 /* Sparkle.framework */,
+			);
+			name = "Copied Frameworks";
+			sourceTree = "<group>";
+		};
+		358BAEEB0DCD9C2C0002C9B2 /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				355AF2EC0DCFD27200E9658A /* CMSourceListController.h */,
+				355AF2ED0DCFD27200E9658A /* CMSourceListController.m */,
+				35F421330DCF112A00D498C0 /* CMWindowController.h */,
+				35F421340DCF112A00D498C0 /* CMWindowController.m */,
+				358BAB700DCD7E9F0002C9B2 /* CMStatusMenuItemController.h */,
+				358BAB710DCD7E9F0002C9B2 /* CMStatusMenuItemController.m */,
+				35D35ECE0DDF6279007F3D1E /* CMRulesViewController.h */,
+				35D35ECF0DDF6279007F3D1E /* CMRulesViewController.m */,
+				354A8FEC0E2DA9400066C645 /* CMPropertiesView.h */,
+				354A8FED0E2DA9400066C645 /* CMPropertiesView.m */,
+			);
+			name = "User Interface";
+			sourceTree = "<group>";
+		};
+		35BD147D0DE0B41800F6193C /* Plugins */ = {
+			isa = PBXGroup;
+			children = (
+				35BD147F0DE0B42100F6193C /* Triggers */,
+			);
+			name = Plugins;
+			sourceTree = "<group>";
+		};
+		35BD147F0DE0B42100F6193C /* Triggers */ = {
+			isa = PBXGroup;
+			children = (
+				35BD14810DE0B42F00F6193C /* CMLightTrigger.xcodeproj */,
+			);
+			name = Triggers;
+			sourceTree = "<group>";
+		};
+		35BD14820DE0B42F00F6193C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				35BD14890DE0B42F00F6193C /* CMLightTrigger.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		35D3603D0DDF76C3007F3D1E /* Data Storage */ = {
+			isa = PBXGroup;
+			children = (
+				358BAE650DCD976E0002C9B2 /* CMContext.h */,
+				358BAE660DCD976E0002C9B2 /* CMContext.m */,
+				35D3603A0DDF76BE007F3D1E /* CMRule.h */,
+				35D3603B0DDF76BE007F3D1E /* CMRule.m */,
+			);
+			name = "Data Storage";
+			sourceTree = "<group>";
+		};
+		35D3603E0DDF76D6007F3D1E /* Growl */ = {
+			isa = PBXGroup;
+			children = (
+				35F4203D0DCEF6E600D498C0 /* CMGrowlPlugin.h */,
+				35F4203E0DCEF6E600D498C0 /* CMGrowlPlugin.m */,
+			);
+			name = Growl;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D1107260486CEB800E47090 /* Carmen */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "Carmen" */;
+			buildPhases = (
+				8D1107290486CEB800E47090 /* Resources */,
+				8D11072C0486CEB800E47090 /* Sources */,
+				8D11072E0486CEB800E47090 /* Frameworks */,
+				358BAB540DCD6EBC0002C9B2 /* CopyFiles */,
+				359D745F0E2B3D9A005E883B /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Carmen;
+			productInstallPath = "$(HOME)/Applications";
+			productName = Carmen;
+			productReference = 8D1107320486CEB800E47090 /* Carmen.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Carmen" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			mainGroup = 29B97314FDCFA39411CA2CEA /* Carmen */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 35BD14820DE0B42F00F6193C /* Products */;
+					ProjectRef = 35BD14810DE0B42F00F6193C /* CMLightTrigger.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				8D1107260486CEB800E47090 /* Carmen */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		35BD14890DE0B42F00F6193C /* CMLightTrigger.bundle */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = CMLightTrigger.bundle;
+			remoteRef = 35BD14880DE0B42F00F6193C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D1107290486CEB800E47090 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
+				1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */,
+				358BACEA0DCD87B70002C9B2 /* carmen-statusmenuicon.png in Resources */,
+				35F41CCF0DCDC89800D498C0 /* carmen-icon.icns in Resources */,
+				357F95AC0DCF46AF004C59DB /* Add.tiff in Resources */,
+				357F95AD0DCF46AF004C59DB /* Add_Pressed.tiff in Resources */,
+				357F95AE0DCF46AF004C59DB /* Add_Disabled.tiff in Resources */,
+				357F95AF0DCF46AF004C59DB /* Delete.tiff in Resources */,
+				357F95B00DCF46AF004C59DB /* Delete_Disabled.tiff in Resources */,
+				357F95B10DCF46AF004C59DB /* Delete_Pressed.tiff in Resources */,
+				357F95B20DCF46AF004C59DB /* DBListSplitViewBar.tiff in Resources */,
+				357F95B30DCF46AF004C59DB /* DBListSplitViewDimple.tiff in Resources */,
+				357F95B40DCF46AF004C59DB /* Folder.tiff in Resources */,
+				357F965D0DCF4B17004C59DB /* DBSourceSplitViewThumb.tiff in Resources */,
+				357F965E0DCF4B17004C59DB /* BottomBar.tiff in Resources */,
+				35B40EC50DD1F4200029350C /* Credits.rtf in Resources */,
+				35D35F5F0DDF6A7F007F3D1E /* picture.png in Resources */,
+				359D762A0E2B4E82005E883B /* CarmenHelp in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		359D745F0E2B3D9A005E883B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#  Build the doxygen documentation for the project and load the docset into Xcode.\n\n#  Use the following to adjust the value of the $DOXYGEN_PATH User-Defined Setting:\n#    Binary install location: /Applications/Doxygen.app/Contents/Resources/doxygen\n#    Source build install location: /usr/local/bin/doxygen\n\n#  If the config file doesn't exist, run 'doxygen -g $SOURCE_ROOT/doxygen.config' to \n#   a get default file.\n\nif ! [ -f $SOURCE_ROOT/doxygen.config ] \nthen \n  echo doxygen config file does not exist\n  $DOXYGEN_PATH -g $SOURCE_ROOT/doxygen.config\nfi\n\n#  Append the proper input/output directories and docset info to the config file.\n#  This works even though values are assigned higher up in the file. Easier than sed.\n\ncp $SOURCE_ROOT/doxygen.config $TEMP_DIR/doxygen.config\n\necho \"INPUT = $SOURCE_ROOT\" >> $TEMP_DIR/doxygen.config\necho \"OUTPUT_DIRECTORY = $SOURCE_ROOT/DoxygenDocs.docset\" >> $TEMP_DIR/doxygen.config\necho \"GENERATE_DOCSET        = YES\" >> $TEMP_DIR/doxygen.config\necho \"DOCSET_BUNDLE_ID       = com.mycompany.DoxygenExample\" >> $TEMP_DIR/doxygen.config\n\n#  Run doxygen on the updated config file.\n#  Note: doxygen creates a Makefile that does most of the heavy lifting.\n\n$DOXYGEN_PATH $TEMP_DIR/doxygen.config\n\n#  make will invoke docsetutil. Take a look at the Makefile to see how this is done.\n\nmake -C $SOURCE_ROOT/DoxygenDocs.docset/html install\n\n#  Construct a temporary applescript file to tell Xcode to load a docset.\n\nrm -f $TEMP_DIR/loadDocSet.scpt\n\necho \"tell application \\\"Xcode\\\"\" >> $TEMP_DIR/loadDocSet.scpt\necho \"load documentation set with path \\\"/Users/$USER/Library/Developer/Shared/Documentation/DocSets/\\\"\" \n     >> $TEMP_DIR/loadDocSet.scpt\necho \"end tell\" >> $TEMP_DIR/loadDocSet.scpt\n\n#  Run the load-docset applescript command.\n\nosascript $TEMP_DIR/loadDocSet.scpt\n\nexit 0";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D11072C0486CEB800E47090 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072D0486CEB800E47090 /* main.m in Sources */,
+				358BAB720DCD7E9F0002C9B2 /* CMStatusMenuItemController.m in Sources */,
+				358BAE5F0DCD969A0002C9B2 /* CMContextController.m in Sources */,
+				358BAE670DCD976E0002C9B2 /* CMContext.m in Sources */,
+				358BAE6C0DCD986B0002C9B2 /* CMStringAdditions.m in Sources */,
+				357E6E7D0DCDA2B700C7D851 /* CarmenController.m in Sources */,
+				35F4203F0DCEF6E600D498C0 /* CMGrowlPlugin.m in Sources */,
+				35F421350DCF112A00D498C0 /* CMWindowController.m in Sources */,
+				357F959D0DCF4690004C59DB /* DBSourceSplitView.m in Sources */,
+				357F959E0DCF4690004C59DB /* DBSourceView.m in Sources */,
+				357F959F0DCF4690004C59DB /* DBListSplitView.m in Sources */,
+				357F95A00DCF4690004C59DB /* KFSplitView.m in Sources */,
+				357F96550DCF4AF9004C59DB /* DBBottomButton.m in Sources */,
+				355AF2EE0DCFD27200E9658A /* CMSourceListController.m in Sources */,
+				35D35ED00DDF6279007F3D1E /* CMRulesViewController.m in Sources */,
+				35D3603C0DDF76BE007F3D1E /* CMRule.m in Sources */,
+				350390380DDF80F20019B6CD /* CMTriggerController.m in Sources */,
+				35BC21680E29CFDB00DCFF02 /* sexp_addons.c in Sources */,
+				35305C770E2CA4390098073A /* CMFrequencyValueTransformer.m in Sources */,
+				354A8FEE0E2DA9400066C645 /* CMPropertiesView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		089C165CFE840E0CC02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C165DFE840E0CC02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1DDD58140DA1D0A300B32029 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1DDD58150DA1D0A300B32029 /* English */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C01FCF4B08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DOXYGEN_PATH = /Developer/Applications/Doxygen.app/Contents/Resources/doxygen;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_ENABLE_OBJC_GC = required;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Carmen_Prefix.pch;
+				GCC_UNROLL_LOOPS = YES;
+				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_CHECK_SWITCH_STATEMENTS = YES;
+				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
+				GCC_WARN_MISSING_PARENTHESES = YES;
+				GCC_WARN_PEDANTIC = NO;
+				GCC_WARN_PROTOTYPE_CONVERSION = NO;
+				GCC_WARN_SHADOW = YES;
+				GCC_WARN_SIGN_COMPARE = YES;
+				GCC_WARN_TYPECHECK_CALLS_TO_PRINTF = YES;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/local/lib,
+					"\"$(SRCROOT)/sexpr/src\"",
+					"\"$(SRCROOT)/Tests\"",
+				);
+				PRODUCT_NAME = Carmen;
+			};
+			name = Debug;
+		};
+		C01FCF4C08A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_GC = required;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Carmen_Prefix.pch;
+				GCC_UNROLL_LOOPS = YES;
+				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_CHECK_SWITCH_STATEMENTS = YES;
+				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
+				GCC_WARN_MISSING_PARENTHESES = YES;
+				GCC_WARN_PEDANTIC = NO;
+				GCC_WARN_PROTOTYPE_CONVERSION = NO;
+				GCC_WARN_SHADOW = YES;
+				GCC_WARN_SIGN_COMPARE = YES;
+				GCC_WARN_TYPECHECK_CALLS_TO_PRINTF = YES;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/local/lib,
+					"\"$(SRCROOT)/sexpr/src\"",
+					"\"$(SRCROOT)/Tests\"",
+				);
+				PRODUCT_NAME = Carmen;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_AUTO_VECTORIZATION = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = YES;
+				GCC_ENABLE_OBJC_GC = required;
+				GCC_FAST_OBJC_DISPATCH = YES;
+				GCC_GENERATE_TEST_COVERAGE_FILES = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_VERSION = 4.2;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_PROFILING_CODE = YES;
+				HEADER_SEARCH_PATHS = /opt/local/include;
+				LIBRARY_SEARCH_PATHS = /opt/local/lib;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "";
+				PREBINDING = NO;
+				SDKROOT = macosx10.5;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_AUTO_VECTORIZATION = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = YES;
+				GCC_ENABLE_OBJC_GC = required;
+				GCC_FAST_OBJC_DISPATCH = YES;
+				GCC_GENERATE_TEST_COVERAGE_FILES = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_VERSION = 4.2;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.5;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "Carmen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4B08A954540054247B /* Debug */,
+				C01FCF4C08A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Carmen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
